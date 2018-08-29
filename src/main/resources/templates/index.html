@@ -1,122 +1,45 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>layout 后台大布局 - Layui</title>
-    <link th:href="@{/layui-v2.3.0/layui/css/layui.css}" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/layui/css/layui.css"  media="all">
 </head>
-<body class="layui-layout-body">
-<div class="layui-layout layui-layout-admin">
-    <div class="layui-header">
-        <div class="layui-logo">layui 后台布局</div>
-        <!-- 头部区域（可配合layui已有的水平导航） -->
-        <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="">控制台</a></li>
-            <li class="layui-nav-item"><a href="">商品管理</a></li>
-            <li class="layui-nav-item"><a href="">用户</a></li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">其它系统</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">邮件管理</a></dd>
-                    <dd><a href="">消息管理</a></dd>
-                    <dd><a href="">授权管理</a></dd>
-                </dl>
-            </li>
-        </ul>
-        <ul class="layui-nav layui-layout-right">
-            <li class="layui-nav-item">
-                <a href="javascript:;">
-                    <img src="http://t.cn/RCzsdCq";; class="layui-nav-img"/>
-                    贤心
-                </a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">基本资料</a></dd>
-                    <dd><a href="">安全设置</a></dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item"><a href="">退了</a></li>
-        </ul>
-    </div>
-    <div class="layui-side layui-bg-black">
-        <div class="layui-side-scroll">
-            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
-                <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">所有商品</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">解决方案</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="">超链接</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item"><a href="">云市场</a></li>
-                <li class="layui-nav-item"><a href="">发布商品</a></li>
-            </ul>
-        </div>
-    </div>
+<body>
 
-    <div class="layui-body">
-        <table id="demo" lay-filter="test"></table>
-        <script src="/layui-v2.3.0/layui/layui.js"></script>
-        <script>
-            layui.use('table', function(){
-                var table = layui.table;
-                //第一个实例
-                table.render({
-                    elem: '#demo'
-                    ,height: 312
-                    ,url: '/goods/list/' //数 据接口
-                    ,page: true //开启分页
-                    ,cols: [[ //表头
-                        {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
-                        ,{field: 'goodsName', title: '用户名', width:80}
-                        ,{field: 'goodsBrand', title: '性别', width:80, sort: true}
-                        ,{field: 'goodsPrice', title: '城市', width:80}
-                        ,{field: 'goodsPlace', title: '签名', width: 177}
-                    ]]
-                });
-            });
-        </script>
+<table class="layui-hide" id="test"></table>
 
-      <!--  &lt;!&ndash; 内容主体区域 &ndash;&gt;
-        <div style="padding: 15px;">
-            <tr th:each="goods:${goods}">
-                <td th:text="${goods.goodsName}"></td>
-                <td th:text="${goods.goodsBrand}"></td>
-                <td th:text="${goods.goodsPrice}"></td>
-                <td th:text="${goods.goodsPlace}"></td>
+<script src="/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('table', function(){
+        var table = layui.table;
 
-                <td class="layui-my-right">
-                    <a th:href="@{/eidtGoodsAll(id=${goods.id})}">
-                        <button class="layui-btn layui-btn-normal">修改</button>
-                    </a>
-                    <a th:href="@{/deletete(id=${goods.id})}">
-                        <button class="layui-btn layui-btn-warm">删除</button>
-                    </a>
-                    <a th:href="@{/allGoods(id=${goods.id})}">
-                        <button class="layui-btn layui-btn-danger">明细</button>
-                    </a>
-                </td>
-            </tr>
-        </div>-->
+        table.render({
+            elem: '#test'
+            ,url:'/goods/list'
+            ,cellMinWidth: 80
+            ,page: false
+            ,response: {
+                statusName:'code'
+                ,statusCode:200
+                ,msgName:'count'
+                ,dataName:'data'
+            }
+            ,cols: [
+                        [
+                            {field:'id', width:80, title: 'ID', sort: true}
+                            ,{field:'goodsName', width:180, title: '商品名称'}
+                            ,{field:'goodsBrand', width:180, title: '商品品牌', sort: true}
+                            ,{field:'goodsPrice', width:180, title: '商品价格'}
+                            ,{field:'goodsPlace', title: '商品产地', width: 180, minWidth: 100}
+                        ]
+                    ]
+        });
+    });
+</script>
 
-    </div>
-
-    <div class="layui-footer">
-        <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
-    </div>
-</div>
-
-<script th:src="@{/layui-v2.3.0/layui/layui.js}"></script>
 </body>
 </html>
