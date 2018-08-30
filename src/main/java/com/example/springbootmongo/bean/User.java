@@ -13,7 +13,7 @@ public class User implements Serializable {
     @Column(name = "ID")
     private Integer id;
     @Column(name = "userName")
-    private String username;
+    private String userName;
     @Column(name = "experience")
     private int experience;
     @Column(name = "sex")
@@ -40,12 +40,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public int getExperience() {

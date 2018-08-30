@@ -4,6 +4,9 @@ import com.example.springbootmongo.bean.User;
 import com.example.springbootmongo.repository.UserRepository;
 import com.example.springbootmongo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -40,5 +43,12 @@ public class UserServiceImpl implements UserService {
     public void editUserById(User user) {
         //User oldUser = userRepository.findById(user.getId()).get();
         userRepository.save(user);
+    }
+
+    @Override
+    public Page<User> getUserPage(Integer pageOffset, Integer pageSize) {
+        PageRequest pageable = PageRequest.of(pageOffset - 1, pageSize, Sort.Direction.ASC, "id");
+        Page<User> pageUser = userRepository.findAll(pageable);
+        return pageUser;
     }
 }

@@ -21,9 +21,9 @@ public class GoodsController {
     @Autowired
     private GoodsService goodsService;
 
-    @RequestMapping("/test")
-    public String test() {
-        return "test";
+    @RequestMapping("/list")
+    public String list() {
+        return "index";
     }
 
     @RequestMapping("/")
