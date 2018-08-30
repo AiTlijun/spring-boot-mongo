@@ -4,6 +4,7 @@ import com.example.springbootmongo.bean.User;
 import com.example.springbootmongo.response.BhResponseResult;
 import com.example.springbootmongo.response.TableModel;
 import com.example.springbootmongo.service.UserService;
+import com.example.springbootmongo.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -62,12 +63,11 @@ public class UserController {
 
     @Transactional
     @RequestMapping("/delete")
-    public Map<String, Object> delete(Integer id) {
-        Map<String, Object> result = new HashMap<String, Object>();
+    public void delete(Integer id, HttpServletResponse resp) {
         System.out.println(id);
         userService.deleteById(id);
-        result.put("status",1);
-        return result;
+        WebUtil.writeStrToClient(resp,"200");
+        return;
     }
 
     @RequestMapping("/edit")

@@ -171,20 +171,19 @@
                         url: "/user/delete",
                         type: "POST",
                         data:{"id":data.id},
-                        dataType: "json",
+                        //dataType: "text",
                         success: function(result){
-                            alert(11111);
-                            console.log(result)
-                          /*  if(result.state==1){
+                          if(result == "200"){
                                 obj.del();
                                 layer.close(index);
                                 layer.msg("删除成功", {icon: 6});
                             }else{
                                 layer.msg("删除失败", {icon: 5});
-                            }*/
+                            }
                         },
-                        error:function(result){
-                            alert(222222)
+                        error:function(){
+                            alert("删除失败");
+                            layer.msg("删除失败", {icon: 5});
                         }
                     });
                 });
