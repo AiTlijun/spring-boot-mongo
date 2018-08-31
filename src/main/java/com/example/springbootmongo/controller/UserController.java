@@ -1,25 +1,19 @@
 package com.example.springbootmongo.controller;
 
 import com.example.springbootmongo.bean.User;
-import com.example.springbootmongo.response.BhResponseResult;
 import com.example.springbootmongo.response.TableModel;
 import com.example.springbootmongo.service.UserService;
 import com.example.springbootmongo.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
 @RequestMapping(value = "/user")
@@ -41,14 +35,14 @@ public class UserController {
     @RequestMapping(value = "/getUserList")
     @ResponseBody
     public TableModel<User> getUserList(@RequestParam(required = false, defaultValue = "1") int page,
-                                              @RequestParam(required = false, defaultValue = "5") int limit) {
+                                        @RequestParam(required = false, defaultValue = "5") int limit) {
         TableModel<User> model = new TableModel<User>();
         //List<User> users = userService.getUserList();
         System.out.println(limit);
-        Page<User> userPage =  userService.getUserPage(page,limit);
+        Page<User> userPage = userService.getUserPage(page, limit);
         model.setCode(200);
         model.setMsg("success");
-        model.setCount((int)userPage.getTotalElements());
+        model.setCount((int) userPage.getTotalElements());
         model.setData(userPage.getContent());
         System.out.println(userPage.getSize());
         return model;
@@ -56,29 +50,57 @@ public class UserController {
 
     @RequestMapping("/add")
     @Transactional
-    public ModelAndView add(HttpServletRequest req, HttpServletResponse resp, User user) {
-        userService.addUser(user);
-        return new ModelAndView("redirect:/user/list");
+    public void add(HttpServletRequest req, HttpServletResponse resp, User user) {
+        try {
+            userService.addUser(user);
+            WebUtil.writeStrToClient(resp, "200");
+        } catch (Exception e) {
+            WebUtil.writeStrToClient(resp, "-1");
+        }
+        return;
     }
 
     @Transactional
     @RequestMapping("/delete")
     public void delete(Integer id, HttpServletResponse resp) {
-        System.out.println(id);
-        userService.deleteById(id);
-        WebUtil.writeStrToClient(resp,"200");
+        try {
+            userService.deleteById(id);
+            WebUtil.writeStrToClient(resp, "200");
+        } catch (Exception e) {
+            WebUtil.writeStrToClient(resp, "-1");
+        }
         return;
     }
 
     @RequestMapping("/edit")
     @Transactional
-    public ModelAndView edit(HttpServletRequest req, Integer id, User user) {
-        //User user = userService.getUserById(id);
-        /*   Goods goods = new Goods();*/
-        System.out.println(user);
+    public void edit(HttpServletRequest req, Integer id, User user, HttpServletResponse resp) {
+        try {
+            userService.editUserById(user);
+            WebUtil.writeStrToClient(resp, "200");
+        } catch (Exception e) {
+            WebUtil.writeStrToClient(resp, "-1");
+        }
+        return;
+    }
 
-        userService.editUserById(user);
-        return new ModelAndView("redirect:/user/list");
+    @RequestMapping(value = "/getUserById")
+    @ResponseBody
+    public User getUserById(HttpServletRequest req, Integer id) {
+        User user = userService.getUserById(id);
+        return user;
+    }
 
+    @Transactional
+    @RequestMapping("/deleteBath")
+    public void deleteBath(Integer[] brandIds, HttpServletResponse resp) {
+        try {
+
+            //userService.deleteBath();
+            WebUtil.writeStrToClient(resp, "200");
+        } catch (Exception e) {
+            WebUtil.writeStrToClient(resp, "-1");
+        }
+        return;
     }
 }

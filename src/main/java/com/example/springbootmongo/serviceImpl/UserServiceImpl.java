@@ -51,4 +51,9 @@ public class UserServiceImpl implements UserService {
         Page<User> pageUser = userRepository.findAll(pageable);
         return pageUser;
     }
+
+    @Override
+    public void deleteBath(List<Integer> brandIds) {
+        userRepository.deleteBatch(brandIds);
+    }
 }

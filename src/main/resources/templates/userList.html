@@ -2,12 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>用户管理系统</title>
     <link rel="stylesheet" href="/layui/css/layui.css" media="all">
     <style>
-        body{margin: 10px;}
-        .demo-carousel{height: 200px; line-height: 200px; text-align: center;}
+        body {
+            margin: 10px;
+        }
+
+        .demo-carousel {
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +28,7 @@
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 
-<div class="layui-tab layui-tab-brief" lay-filter="demo">
+<<!--div class="layui-tab layui-tab-brief" lay-filter="demo">
     <ul class="layui-tab-title">
         <li class="layui-this">演示说明</li>
         <li>日期</li>
@@ -57,9 +65,9 @@
             <div id="sliderDemo" style="margin: 50px 20px;"></div>
         </div>
     </div>
-</div>
+</div>-->
 
-<blockquote class="layui-elem-quote layui-quote-nm layui-hide" id="footer">layui {{ layui.v }} 提供强力驱动</blockquote>
+<blockquote class="layui-elem-quote layui-quote-nm layui-hide" id="footer">一个字，就是干！</blockquote>
 
 
 <script src="/layui/layui.js"></script>
@@ -69,23 +77,25 @@
     /*layui.config({
         version: '1535480388220' //为了更新 js 缓存，可忽略
     });*/
-
-    layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function(){
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider', 'form'], function () {
         var laydate = layui.laydate //日期
-            ,laypage = layui.laypage //分页
-            ,layer = layui.layer //弹层
-            ,table = layui.table //表格
-            ,carousel = layui.carousel //轮播
-            ,upload = layui.upload //上传
-            ,element = layui.element //元素操作
-            ,slider = layui.slider //滑块
+            , laypage = layui.laypage //分页
+            , layer = layui.layer //弹层
+            , table = layui.table //表格
+            , carousel = layui.carousel //轮播
+            , upload = layui.upload //上传
+            , element = layui.element //元素操作
+            , slider = layui.slider //滑块
+            , $ = layui.jquery
+            , form = layui.form
+
 
         //向世界问个好
         //layer.msg('Hello World');
 
         //监听Tab切换
-        element.on('tab(demo)', function(data){
-            layer.tips('切换了 '+ data.index +'：'+ this.innerHTML, this, {
+        element.on('tab(demo)', function (data) {
+            layer.tips('切换了 ' + data.index + '：' + this.innerHTML, this, {
                 tips: 1
             });
         });
@@ -93,38 +103,38 @@
         //执行一个 table 实例
         table.render({
             elem: '#demo'
-            ,height: 420
-            ,url: '/user/getUserList/' //数据接口
-            ,title: '用户表'
-            ,page: true //开启分页
-            ,toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
-            ,totalRow: true //开启合计行
-            ,response: {
-                statusName:'code'
-                ,statusCode:200
-                ,msgName:'count'
-                ,dataName:'data'
+            , height: 420
+            , url: '/user/getUserList/' //数据接口
+            , title: '用户表'
+            , page: true //开启分页
+            , toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
+            , totalRow: true //开启合计行
+            , response: {
+                statusName: 'code'
+                , statusCode: 200
+                , msgName: 'count'
+                , dataName: 'data'
             }
-            ,cols: [
-                        [ //表头
-                            {type: 'checkbox', fixed: 'left'}
-                            ,{field: 'id', title: 'ID', width:80, sort: true, fixed: 'left', totalRowText: '合计：'}
-                            ,{field: 'userName', title: '用户名', width:80}
-                            ,{field: 'experience', title: '积分', width: 80, sort: true, totalRow: true}
-                            ,{field: 'sex', title: '性别', width:80, sort: true}
-                            ,{field: 'score', title: '评分', width: 80, sort: true, totalRow: true}
-                            ,{field: 'city', title: '城市', width:150}
-                            ,{field: 'sign', title: '签名', width: 200}
-                            ,{field: 'classify', title: '职业', width: 100}
-                            ,{field: 'wealth', title: '财富', width: 135, sort: true, totalRow: true}
-                            ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
-                        ]
-                    ]
-            ,done:function(res, curr, count){    //res 接口返回的信息
-                $("[data-field = 'sex']").children().each(function(){
-                    if($(this).text() == '1'){
+            , cols: [
+                [ //表头
+                    {type: 'checkbox', fixed: 'left'}
+                    , {field: 'id', title: 'ID', width: 80, sort: true, fixed: 'left', totalRowText: '合计：'}
+                    , {field: 'userName', title: '用户名', width: 80}
+                    , {field: 'experience', title: '积分', width: 80, sort: true, totalRow: true}
+                    , {field: 'sex', title: '性别', width: 80, sort: true}
+                    , {field: 'score', title: '评分', width: 80, sort: true, totalRow: true}
+                    , {field: 'city', title: '城市', width: 150}
+                    , {field: 'sign', title: '签名', width: 200}
+                    , {field: 'classify', title: '职业', width: 100}
+                    , {field: 'wealth', title: '财富', width: 135, sort: true, totalRow: true}
+                    , {fixed: 'right', width: 165, align: 'center', toolbar: '#barDemo'}
+                ]
+            ]
+            , done: function (res, curr, count) {    //res 接口返回的信息
+                $("[data-field = 'sex']").children().each(function () {
+                    if ($(this).text() == '1') {
                         $(this).text("男");
-                    }else {
+                    } else {
                         $(this).text("女");
                     }
                 })
@@ -132,91 +142,248 @@
         });
 
         //监听头工具栏事件
-        table.on('toolbar(test)', function(obj){
+        table.on('toolbar(test)', function (obj) {
             var checkStatus = table.checkStatus(obj.config.id)
-                ,data = checkStatus.data; //获取选中的数据
-            switch(obj.event){
+                , data = checkStatus.data; //获取选中的数据
+            switch (obj.event) {
                 case 'add':
-                    layer.msg('添加');
+                    //layer.msg('添加');
+                    layer.open({
+                        type: 1,
+                        area: '750px',
+                        offset: '10px',
+                        closeBtn: 1,
+                        shadeClose: true,
+                        title: ["添加", "background:#0074d9;color:#fff;margin-bottom:24px;"],
+                        content: $('#user-info-div'),
+                        success: function (layero, index) {
+                            // layer.msg("添加成功");
+                        },
+                        cancel: function () {
+                            layer.closeAll();
+                        }
+                    });
                     break;
                 case 'update':
-                    if(data.length === 0){
+                    if (data.length === 0) {
                         layer.msg('请选择一行');
-                    } else if(data.length > 1){
+                    } else if (data.length > 1) {
                         layer.msg('只能同时编辑一个');
                     } else {
-                        layer.alert('编辑 [id]：'+ checkStatus.data[0].id);
+                        layer.alert('编辑 [id]：' + checkStatus.data[0].id);
+                        layer.msg('编辑操作');
+                        $("#userId").val(data[0].id);
+                        $("#userName").val(data[0].userName);
+                        $("#experience").val(data[0].experience);
+                        $("input[name=sex][value='0']").attr("checked", data[0].sex == 0 ? true : false);
+                        $("input[name=sex][value='1']").attr("checked", data[0].sex == 1 ? true : false);
+                        $("#score").val(data[0].score);
+                        $("#city").val("" + data[0].city);
+                        $("#sign").val("" + data[0].sign);
+                        $("#classify").val("" + data[0].classify);
+                        $("#wealth").val("" + data[0].wealth);
+                        form.render();
+                        layer.open({
+                            title: '编辑',
+                            type: 1,
+                            area: ['500px', '600px'],
+                            content: $("#user-info-div")
+                        });
                     }
                     break;
                 case 'delete':
-                    if(data.length === 0){
+                    if (data.length === 0) {
                         layer.msg('请选择一行');
                     } else {
+                        var deList = [];
+                        data.forEach(function (n, i) {
+                            delList.push(n.id);
+                        });
+                        layer.confirm('确定删除所选项吗？', function (index) {
+                            $.ajax({
+                                url: '/user/deleteBath',
+                                type: 'post',
+                                dataType: 'json',
+                                data: {"id": delList},
+                                success: function (result) {
+                                    if (result.code === '200') {
+                                        layer.msg('删除成功');
+                                        table.reload('idTest', {});
+                                    } else {
+                                        layer.msg('删除失败');
+                                    }
+                                },
+                                'error': function () {
+                                    layer.msg('系统错误');
+                                }
+                            })
+                        })
                         layer.msg('删除');
                     }
                     break;
-            };
+            }
+            ;
         });
 
         //监听行工具事件
-        table.on('tool(test)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+        table.on('tool(test)', function (obj) { //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
             var data = obj.data //获得当前行数据
-                ,layEvent = obj.event; //获得 lay-event 对应的值
-            if(layEvent === 'detail'){
+                , layEvent = obj.event; //获得 lay-event 对应的值
+            if (layEvent === 'detail') {
                 layer.msg('查看操作');
-            } else if(layEvent === 'del'){
-                layer.confirm('真的删除行么', function(index){
+                $("#userId").val(data.id);
+                $("#userName").val(data.userName);
+                $("#experience").val(data.experience);
+                $("input[name=sex][value='0']").attr("checked", data.sex == 0 ? true : false);
+                $("input[name=sex][value='1']").attr("checked", data.sex == 1 ? true : false);
+                $("#score").val(data.score);
+                $("#city").val("" + data.city);
+                $("#sign").val("" + data.sign);
+                $("#classify").val("" + data.classify);
+                $("#wealth").val("" + data.wealth);
+                form.render();
+                $("#submit-button-div").attr("style", "display:none;");
+                // $("#user-info-div").attr("contentEditable", true);
+                var a = document.getElementsByTagName("input");
+                for (var i = 0; i < a.length; i++) {
+                    a[i].disabled = true;
+                }
+                layer.open({
+                    title: '查看',
+                    type: 1,
+                    area: ['500px', '600px'],
+                    content: $("#user-info-div"),
+                    success: function (layero, index) {
+                        // layer.msg("添加成功");
+                    },
+                    cancel: function () {
+                        window.parent.location.reload();//父页面刷新
+                    }
+                });
+
+                /*var a = document.getElementsByTagName("input");
+                for (var i = 0; i < a.length; i++) {
+                    a[i].disabled = false;
+                }*/
+                // $("#submit-button-div").attr("style", "display:block;");
+
+            } else if (layEvent === 'del') {
+                layer.confirm('真的删除行么', function (index) {
                     console.log(data);
                     $.ajax({
                         url: "/user/delete",
                         type: "POST",
-                        data:{"id":data.id},
+                        data: {"id": data.id},
                         //dataType: "text",
-                        success: function(result){
-                          if(result == "200"){
-                                obj.del();
-                                layer.close(index);
+                        success: function (result) {
+                            if (result == "200") {
+                                location.reload();
                                 layer.msg("删除成功", {icon: 6});
-                            }else{
+                            } else {
                                 layer.msg("删除失败", {icon: 5});
                             }
                         },
-                        error:function(){
+                        error: function () {
                             alert("删除失败");
                             layer.msg("删除失败", {icon: 5});
                         }
                     });
                 });
-            } else if(layEvent === 'edit'){
+            } else if (layEvent === 'edit') {
                 layer.msg('编辑操作');
+                $("#userId").val(data.id);
+                $("#userName").val(data.userName);
+                $("#experience").val(data.experience);
+                $("input[name=sex][value='0']").attr("checked", data.sex == 0 ? true : false);
+                $("input[name=sex][value='1']").attr("checked", data.sex == 1 ? true : false);
+                $("#score").val(data.score);
+                $("#city").val("" + data.city);
+                $("#sign").val("" + data.sign);
+                $("#classify").val("" + data.classify);
+                $("#wealth").val("" + data.wealth);
+                form.render();
+                layer.open({
+                    title: '编辑',
+                    type: 1,
+                    area: ['500px', '600px'],
+                    content: $("#user-info-div")
+                });
             }
+        });
+
+
+        var urlParam = $("#userId").val();
+        if (urlParam.trim() != "") {
+            $.post("/user/getUserById", {
+                "id": urlParam
+            }, function (msg) {
+
+                var artist = "${tourism.artist!}";
+                $("#artist").val(artist);
+                form.render('select', 'artist');
+                var json = eval('(' + msg + ')');
+                for (var key in json) {
+                    $("#" + key + "").val(json[key]);
+                }
+                $("#demo1").attr("src", json['pic']);
+                form.render('select');
+            });
+        }
+        //监听编辑或者添加-----之前说的重点lay-filter="saveOrAdd"
+        form.on('submit(saveOrUpdate)', function (data) {
+            var url = $("#userId").val() == "" ? "/user/add" : "/user/edit";
+            var datas = data.field;
+            $.ajax({
+                url: url,
+                data: datas,
+                type: "POST",
+                dataType: "json",
+                success: function (result) {
+                    if (result == "200") {
+                        //因为我的这个页面是添加或编辑页面  是通过layer.open出来的 所以parent.layer.close(index);
+                        //你们的可以自行
+                        var index = parent.layer.getFrameIndex(window.name);  //获取当前弹窗索引index
+                        layer.msg('修改成功...', {icon: 5});
+                        parent.layer.close(index); //返回成功 关闭当前弹窗
+                        window.parent.location.reload();//父页面刷新
+                    } else {
+                        layer.msg('操作失败', {icon: 5});
+                    }
+                },
+                error: function (result) {
+                    layer.msg('系统异常！请联系管理员', {icon: 5});
+                }
+            });
+            //***********重点中的重点********************
+            return false;
+            //**********重点中的重点*********************
         });
 
         //执行一个轮播实例
         carousel.render({
             elem: '#test1'
-            ,width: '100%' //设置容器宽度
-            ,height: 200
-            ,arrow: 'none' //不显示箭头
-            ,anim: 'fade' //切换动画方式
+            , width: '100%' //设置容器宽度
+            , height: 200
+            , arrow: 'none' //不显示箭头
+            , anim: 'fade' //切换动画方式
         });
 
         //将日期直接嵌套在指定容器中
         var dateIns = laydate.render({
             elem: '#laydateDemo'
-            ,position: 'static'
-            ,calendar: true //是否开启公历重要节日
-            ,mark: { //标记重要日子
+            , position: 'static'
+            , calendar: true //是否开启公历重要节日
+            , mark: { //标记重要日子
                 '0-10-14': '生日'
-                ,'2018-08-28': '新版'
-                ,'2018-10-08': '神秘'
+                , '2018-08-28': '新版'
+                , '2018-10-08': '神秘'
             }
-            ,done: function(value, date, endDate){
-                if(date.year == 2017 && date.month == 11 && date.date == 30){
+            , done: function (value, date, endDate) {
+                if (date.year == 2017 && date.month == 11 && date.date == 30) {
                     dateIns.hint('一不小心就月底了呢');
                 }
             }
-            ,change: function(value, date, endDate){
+            , change: function (value, date, endDate) {
                 layer.msg(value)
             }
         });
@@ -224,12 +391,12 @@
         //分页
         laypage.render({
             elem: 'pageDemo' //分页容器的id
-            ,count: 100 //总页数
-            ,skin: '#1E9FFF' //自定义选中色值
+            , count: 100 //总页数
+            , skin: '#1E9FFF' //自定义选中色值
             //,skip: true //开启跳页
-            ,jump: function(obj, first){
-                if(!first){
-                    layer.msg('第'+ obj.curr +'页', {offset: 'b'});
+            , jump: function (obj, first) {
+                if (!first) {
+                    layer.msg('第' + obj.curr + '页', {offset: 'b'});
                 }
             }
         });
@@ -237,15 +404,15 @@
         //上传
         upload.render({
             elem: '#uploadDemo'
-            ,url: '' //上传接口
-            ,done: function(res){
+            , url: '' //上传接口
+            , done: function (res) {
                 console.log(res)
             }
         });
 
         slider.render({
             elem: '#sliderDemo'
-            ,input: true //输入框
+            , input: true //输入框
         });
 
         //底部信息
@@ -254,5 +421,76 @@
             .removeClass('layui-hide');
     });
 </script>
+
 </body>
+
+<div class="user-info-div" id="user-info-div" style="display: none;">
+    <form class="layui-form" id="add-user-form" action="">
+        <input id="userId" name="id" type="hidden">
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名：</label>
+            <div class="layui-input-inline">
+                <input name="userName" id="userName" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="text">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">积分：</label>
+            <div class="layui-input-inline">
+                <input name="experience" id="experience" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="number">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别：</label>
+            <div class="layui-input-inline">
+                <input type="radio" name="sex" value="0" title="女">
+                <input type="radio" name="sex" value="1" title="男" checked>
+                <input type="radio" name="sex" value="2" title="不男不女" disabled>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">评分：</label>
+            <div class="layui-input-inline">
+                <input name="score" id="score" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="number">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">城市：</label>
+            <div class="layui-input-inline">
+                <input name="city" id="city" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="text">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">签名：</label>
+            <div class="layui-input-inline">
+                <input name="sign" id="sign" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="text">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">职业：</label>
+            <div class="layui-input-inline">
+                <input name="classify" id="classify" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="text">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">财富：</label>
+            <div class="layui-input-inline">
+                <input name="wealth" id="wealth" lay-verify="required" autocomplete="off" class="layui-input"
+                       type="number">
+            </div>
+            元
+        </div>
+        <div class="layui-form-item" id="submit-button-div">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit="" lay-filter="saveOrUpdate">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
 </html>

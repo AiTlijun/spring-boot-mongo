@@ -18,4 +18,6 @@ public interface UserService {
     void editUserById(User user);
 
     Page<User> getUserPage(Integer pageOffset, Integer pageSize);
+
+    void deleteBath(List<Integer> brandIds);
 }

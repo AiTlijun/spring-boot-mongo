@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 
- * @author whitemoon web工具类
+ * @author lijun web工具类
  * 
  */
 public class WebUtil {
