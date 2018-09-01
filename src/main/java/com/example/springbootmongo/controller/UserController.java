@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/user")
@@ -49,7 +51,6 @@ public class UserController {
     }
 
     @RequestMapping("/add")
-    @Transactional
     public void add(HttpServletRequest req, HttpServletResponse resp, User user) {
         try {
             userService.addUser(user);
@@ -60,7 +61,6 @@ public class UserController {
         return;
     }
 
-    @Transactional
     @RequestMapping("/delete")
     public void delete(Integer id, HttpServletResponse resp) {
         try {
@@ -73,7 +73,6 @@ public class UserController {
     }
 
     @RequestMapping("/edit")
-    @Transactional
     public void edit(HttpServletRequest req, Integer id, User user, HttpServletResponse resp) {
         try {
             userService.editUserById(user);
@@ -91,12 +90,11 @@ public class UserController {
         return user;
     }
 
-    @Transactional
-    @RequestMapping("/deleteBath")
-    public void deleteBath(Integer[] brandIds, HttpServletResponse resp) {
+    @RequestMapping(value = "/deleteBath")
+    @ResponseBody
+    public void deleteBath(@RequestParam("brandIds") List<Integer> brandIds, HttpServletResponse resp) {
         try {
-
-            //userService.deleteBath();
+            userService.deleteBath(brandIds);
             WebUtil.writeStrToClient(resp, "200");
         } catch (Exception e) {
             WebUtil.writeStrToClient(resp, "-1");

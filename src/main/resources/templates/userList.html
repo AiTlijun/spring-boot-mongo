@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/layui/css/layui.css" media="all">
     <style>
         body {
-            margin: 10px;
+            margin: 30px;
         }
 
         .demo-carousel {
@@ -103,7 +103,7 @@
         //执行一个 table 实例
         table.render({
             elem: '#demo'
-            , height: 420
+            , height: 700
             , url: '/user/getUserList/' //数据接口
             , title: '用户表'
             , page: true //开启分页
@@ -195,20 +195,22 @@
                     if (data.length === 0) {
                         layer.msg('请选择一行');
                     } else {
-                        var deList = [];
+                        var delList = [];
                         data.forEach(function (n, i) {
                             delList.push(n.id);
                         });
-                        layer.confirm('确定删除所选项吗？', function (index) {
+                        layer.confirm('确定删除选择信息不后悔吗？', {
+                            btn: ['不后悔', '后悔了'] //按钮
+                        }, function () {
                             $.ajax({
                                 url: '/user/deleteBath',
                                 type: 'post',
                                 dataType: 'json',
-                                data: {"id": delList},
+                                data: {"brandIds": delList.join()},
                                 success: function (result) {
-                                    if (result.code === '200') {
+                                    if (result == '200') {
                                         layer.msg('删除成功');
-                                        table.reload('idTest', {});
+                                        table.reload('demo', {});
                                     } else {
                                         layer.msg('删除失败');
                                     }
@@ -217,8 +219,13 @@
                                     layer.msg('系统错误');
                                 }
                             })
-                        })
-                        layer.msg('删除');
+                            //layer.msg('的确很重要', {icon: 1});
+                        }, function () {
+                            layer.msg('也可以这样', {
+                                time: 20000, //20s后自动关闭
+                                btn: ['明白了', '知道了']
+                            });
+                        });
                     }
                     break;
             }

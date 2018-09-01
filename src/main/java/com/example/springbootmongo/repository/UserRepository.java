@@ -17,7 +17,7 @@ public interface UserRepository extends CrudRepository<User,Integer>, PagingAndS
     // 注意更新和删除是需要加事务的， 并且要加上 @Modify的注解
     @Modifying
     @Transactional
-    @Query("delete from user where id in (?1)")
+    @Query("delete from User where id in (?1)")
     void deleteBatch(List<Integer> ids);
 
     // 这个是通过spring data拼接关键字进行的操作

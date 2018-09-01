@@ -1,0 +1,10 @@
+1、Exception in thread "main" org.springframework.beans.factory.BeanCreationException: Error creating bean with name '
+studentServiceBean': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException:
+Validation failed for query for method public abstract boxfish.bean.Student boxfish.service.StudentServiceBean.find(java.lang.String)!
+原因：bean类中的扩展查询方法的query语句中的sql语句存在错误。
+查询语句应该为select    s   from  Student s where s.id=?1这种样式。其中表明Stduent必须和实体类名完全相同，否则报错。
+
+
+2.SpringMVC后台接收list类型的数据的实现方式
+
+参考：https://www.cnblogs.com/hafiz/p/5498936.html
