@@ -1,8 +1,11 @@
 package com.example.springbootmongo.bean;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
+@Data
 @Entity
 @Table(name = "User")
 public class User implements Serializable {
@@ -30,77 +33,5 @@ public class User implements Serializable {
     private Long wealth;
 
     public User() {
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public int getExperience() {
-        return experience;
-    }
-
-    public void setExperience(int experience) {
-        this.experience = experience;
-    }
-
-    public byte getSex() {
-        return sex;
-    }
-
-    public void setSex(byte sex) {
-        this.sex = sex;
-    }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getSign() {
-        return sign;
-    }
-
-    public void setSign(String sign) {
-        this.sign = sign;
-    }
-
-    public String getClassify() {
-        return classify;
-    }
-
-    public void setClassify(String classify) {
-        this.classify = classify;
-    }
-
-    public Long getWealth() {
-        return wealth;
-    }
-
-    public void setWealth(Long wealth) {
-        this.wealth = wealth;
     }
 }
