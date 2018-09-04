@@ -1,6 +1,7 @@
 package com.example.springbootmongo.repository;
 
 import com.example.springbootmongo.bean.User;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -9,10 +10,10 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import javax.transaction.Transactional;
 import java.util.List;
 
-public interface UserRepository extends CrudRepository<User,Integer>, PagingAndSortingRepository<User,Integer> {
+public interface UserRepository extends CrudRepository<User, Integer>, PagingAndSortingRepository<User, Integer>, JpaSpecificationExecutor {
     /**
-     * @function 自定义JPQL
      * @param ids
+     * @function 自定义JPQL
      */
     // 注意更新和删除是需要加事务的， 并且要加上 @Modify的注解
     @Modifying

@@ -1,92 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration debug="true">
-    <!-- 项目名称 -->
-    <property name="PROJECT_NAME" value="bq_interface" />
-
-
-    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
-    <property name="LOG_HOME" value="/opt/logs/bq_interface" />
-
-
-    <!-- 控制台输出 -->
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <!--<withJansi>true</withJansi>-->
-        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] %highlight([%-5level] %logger{50} - %msg%n)</pattern>
+<configuration>
+    <!-- %m输出的信息,%p日志级别,%t线程名,%d日期,%c类的全名,%i索引【从数字0开始递增】,,, -->
+    <!-- appender是configuration的子节点，是负责写日志的组件。 -->
+    <!-- ConsoleAppender：把日志输出到控制台 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %p (%file:%line\)- %m%n</pattern>
+            <!-- 控制台也要使用UTF-8，不要使用GBK，否则会中文乱码 -->
             <charset>UTF-8</charset>
-            <!--             <charset>GBK</charset> -->
         </encoder>
     </appender>
-
-
-    <!-- 按照每天生成日志文件 -->
-    <appender name="SYSTEM_FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <!-- 过滤器，只打印ERROR级别的日志 -->
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <!--日志文件输出的文件名-->
-            <FileNamePattern>${LOG_HOME}/${PROJECT_NAME}.system-dev.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
-            <!--日志文件保留天数-->
-            <MaxHistory>15</MaxHistory>
-            <!--日志文件最大的大小-->
-            <MaxFileSize>10MB</MaxFileSize>
+    <!-- RollingFileAppender：滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件 -->
+    <!-- 以下的大概意思是：1.先按日期存日志，日期变了，将前一天的日志文件名重命名为XXX%日期%索引，新的日志仍然是demo.log -->
+    <!--             2.如果日期没有发生变化，但是当前日志的文件大小超过1KB时，对当前日志进行分割 重命名-->
+    <appender name="userlog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>log/user.log</File>
+        <!-- rollingPolicy:当发生滚动时，决定 RollingFileAppender 的行为，涉及文件移动和重命名。 -->
+        <!-- TimeBasedRollingPolicy： 最常用的滚动策略，它根据时间来制定滚动策略，既负责滚动也负责出发滚动 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 活动文件的名字会根据fileNamePattern的值，每隔一段时间改变一次 -->
+            <!-- 文件名：log/demo.2017-12-05.0.log -->
+            <fileNamePattern>log/user.%d.%i.log</fileNamePattern>
+            <!-- 每产生一个日志文件，该日志文件的保存期限为30天 -->
+            <maxHistory>30</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy  class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- maxFileSize:这是活动文件的大小，默认值是10MB，测试时可改成1KB看效果 -->
+                <maxFileSize>1KB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
-
-
-        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%-5level] %logger{50} - %msg%n</pattern>
+        <encoder>
+            <!-- pattern节点，用来设置日志的输入格式 -->
+            <pattern>
+                %d %p (%file:%line\)- %m%n
+            </pattern>
+            <!-- 记录日志的编码:此处设置字符集 - -->
             <charset>UTF-8</charset>
         </encoder>
     </appender>
-    <logger name="system_error" additivity="true">
-        <appender-ref ref="SYSTEM_FILE"/>
-    </logger>
-
-
-    <!-- 自己打印的日志文件，用于记录重要日志信息 -->
-    <!--     <appender name="MY_INFO_FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender"> -->
-    <!--         过滤器，只打印ERROR级别的日志 -->
-    <!--         <filter class="ch.qos.logback.classic.filter.LevelFilter"> -->
-    <!--             <level>INFO</level> -->
-    <!--             <onMatch>ACCEPT</onMatch> -->
-    <!--             <onMismatch>DENY</onMismatch> -->
-    <!--         </filter> -->
-    <!--         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy"> -->
-    <!--             日志文件输出的文件名 -->
-    <!--             <FileNamePattern>${LOG_HOME}/${PROJECT_NAME}.my_info.%d{yyyy-MM-dd}.%i.log</FileNamePattern> -->
-    <!--             日志文件保留天数 -->
-    <!--             <MaxHistory>15</MaxHistory> -->
-    <!--             日志文件最大的大小 -->
-    <!--             <MaxFileSize>10MB</MaxFileSize> -->
-    <!--         </rollingPolicy> -->
-
-
-    <!--         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"> -->
-    <!--             格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
-    <!--             <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%-5level] %logger{50} - %msg%n</pattern> -->
-    <!--             <charset>UTF-8</charset> -->
-    <!--         </encoder> -->
-    <!--     </appender> -->
-    <!--     <logger name="my_info" additivity="true"> -->
-    <!--         <appender-ref ref="MY_INFO_FILE"/> -->
-    <!--     </logger> -->
-    <!-- 设置Spring&Hibernate日志输出级别 -->
-    <logger name="org.springframework" level="WARN" />
-    <logger name="org.mybatis" level="WARN" />
-    <logger name="com.ibatis" level="DEBUG" />
-    <logger name="com.ibatis.common.jdbc.SimpleDataSource" level="DEBUG" />
-    <logger name="com.ibatis.common.jdbc.ScriptRunner" level="DEBUG" />
-    <logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="DEBUG" />
-
-
-    <logger name="java.sql.Connection" level="DEBUG" />
-    <logger name="java.sql.Statement" level="DEBUG" />
-    <logger name="java.sql.PreparedStatement" level="DEBUG" />
-    <logger name="com.ruidou.baoqian.mapper" level="DEBUG" />
-    <!-- 开发环境下的日志配置 -->
-    <root level="INFO,DEBUG">
-        <appender-ref ref="CONSOLE" />
-        <appender-ref ref="SYSTEM_FILE" />
+    <!-- 控制台输出日志级别 -->
+    <root level="info">
+        <appender-ref ref="STDOUT" />
     </root>
+    <!-- 指定项目中某个包，当有日志操作行为时的日志记录级别 -->
+    <!-- com.liyan为根包，也就是只要是发生在这个根包下面的所有日志操作行为的权限都是DEBUG -->
+    <!-- 级别依次为【从高到低】：FATAL > ERROR > WARN > INFO > DEBUG > TRACE  -->
+    <logger name="com.example" level="DEBUG">
+        <appender-ref ref="userlog" />
+    </logger>
 </configuration>

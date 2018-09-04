@@ -17,7 +17,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
   #主库
     write:
-      url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://localhost:3306/master?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -36,7 +36,7 @@ spring:
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
     read1:
-      url: jdbc:mysql://localhost:3306/slave1?useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://localhost:3306/slave1?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -55,7 +55,7 @@ spring:
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
     read2:
-      url: jdbc:mysql://localhost:3306/slave2?useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://localhost:3306/slave2?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver

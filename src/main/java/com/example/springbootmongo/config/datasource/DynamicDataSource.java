@@ -1,4 +1,4 @@
-package com.example.springbootmongo.config.datasource.dynamic;
+package com.example.springbootmongo.config.datasource;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
@@ -40,7 +40,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
 
          */
 
-        return DynamicDataSourceContextHolder.getDataSourceType();
+        return null;
 
     }
 
