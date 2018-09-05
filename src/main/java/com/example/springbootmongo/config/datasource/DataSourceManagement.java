@@ -10,15 +10,12 @@ import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
-import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
@@ -39,51 +36,43 @@ public class DataSourceManagement {
     private DataSource readDataSource2;
 
 
-    @Primary
-    @Bean(name = "entityManagerPrimary")
+    @Bean(name = "entityManager")
     public EntityManager entityManager(EntityManagerFactoryBuilder builder) {
-        return entityManagerFactoryPrimary(builder).getObject().createEntityManager();
+        return entityManagerFactory(builder).getObject().createEntityManager();
     }
 
-    @Primary
-    @Bean(name = "entityManagerFactoryPrimary")
-    public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary (EntityManagerFactoryBuilder builder) {
+    @Bean(name = "entityManagerFactory")
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder) {
+        String dataSouceType = DataSourceContextHolder.getJdbcType();
+        DataSource dataSourceNew = null;
+        int random = (int) (Math.random() * 100);
+        if ("read".equals(dataSouceType)) {
+            log.info("-----------------------random-----"+random);
+            if (random % 2 == 0) {
+                dataSourceNew = readDataSource1;
+            } else
+                dataSourceNew = readDataSource2;
+        } else {
+            dataSourceNew = writeDataSource;
+        }
         return builder
-                .dataSource(writeDataSource)
-                .properties(getVendorProperties(writeDataSource))
-                .packages("com.example.springbootmongo.repository") //设置实体类所在位置
-                .persistenceUnit("primaryPersistenceUnit")
+                .dataSource(dataSourceNew)
+                .properties(getVendorProperties())
+                .packages("com.example.springbootmongo.bean") //设置实体类所在位置
+                .persistenceUnit("PersistenceUnit")
                 .build();
     }
 
     @Autowired
     private JpaProperties jpaProperties;
 
-    private Map<String, Object> getVendorProperties(DataSource dataSource) {
-        return jpaProperties.getHibernateProperties((HibernateSettings)dataSource);
+    private Map<String, Object> getVendorProperties() {
+        return jpaProperties.getHibernateProperties(new HibernateSettings());
     }
 
-    @Primary
-    @Bean(name = "transactionManagerPrimary")
-    public PlatformTransactionManager transactionManagerPrimary(EntityManagerFactoryBuilder builder) {
-        return new JpaTransactionManager(entityManagerFactoryPrimary(builder).getObject());
-    }
-    /**
-     * 有多少个数据源就要配置多少个bean
-     * @return
-     */
-    @Bean
-    public AbstractRoutingDataSource roundRobinDataSouceProxy() {
-        int size = Integer.parseInt(dataSourceSize);
-        MyAbstractRoutingDataSource proxy = new MyAbstractRoutingDataSource(size);
-        Map<Object, Object> targetDataSources = new HashMap<Object, Object>();
-        // 写
-        targetDataSources.put(DataSourceType.write.getType(), writeDataSource);
-        targetDataSources.put(DataSourceType.read.getType()+"1", readDataSource1);
-        targetDataSources.put(DataSourceType.read.getType()+"2", readDataSource2);
-        proxy.setDefaultTargetDataSource(writeDataSource);
-        proxy.setTargetDataSources(targetDataSources);
-        return proxy;
+    @Bean(name = "transactionManager")
+    public PlatformTransactionManager transactionManager(EntityManagerFactoryBuilder builder) {
+        return new JpaTransactionManager(entityManagerFactory(builder).getObject());
     }
 
 }
