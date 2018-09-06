@@ -4,12 +4,17 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateSettings;
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
+import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
+import org.springframework.core.env.Environment;
+import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -21,7 +26,7 @@ import java.util.Map;
 @Configuration
 @AutoConfigureAfter({DataSourceConfig.class})
 @Slf4j
-public class DataSourceManagement {
+public class DataSourceManagement implements ImportBeanDefinitionRegistrar, EnvironmentAware {
     @Value("${spring.datasource.readSize}")
     private String dataSourceSize;
 
@@ -75,4 +80,13 @@ public class DataSourceManagement {
         return new JpaTransactionManager(entityManagerFactory(builder).getObject());
     }
 
+    @Override
+    public void setEnvironment(Environment environment) {
+
+    }
+
+    @Override
+    public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
+
+    }
 }
