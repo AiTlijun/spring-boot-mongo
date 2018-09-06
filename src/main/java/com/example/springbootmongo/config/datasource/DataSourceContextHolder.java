@@ -24,4 +24,10 @@ public class DataSourceContextHolder {
     public static String getJdbcType() {
         return local.get();
     }
+
+    public static void clearDataSourceType() {
+
+        local.remove();
+
+    }
 }
