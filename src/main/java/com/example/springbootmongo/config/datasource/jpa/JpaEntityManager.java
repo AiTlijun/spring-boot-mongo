@@ -60,7 +60,7 @@ public class JpaEntityManager {
         return builder
                 .dataSource(routingDataSource())//关键：注入routingDataSource
                 .properties(jpaProperties.getProperties())
-                .packages("com.example.springbootmongo.bean")
+                .packages("com.example.springbootmongo.entity")
                 .persistenceUnit("myPersistenceUnit")
                 .build();
     }

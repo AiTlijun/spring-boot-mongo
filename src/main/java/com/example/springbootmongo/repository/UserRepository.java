@@ -1,6 +1,6 @@
 package com.example.springbootmongo.repository;
 
-import com.example.springbootmongo.bean.User;
+import com.example.springbootmongo.entity.User;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

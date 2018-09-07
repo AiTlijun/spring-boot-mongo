@@ -1,6 +1,6 @@
 package com.example.springbootmongo.serviceImpl;
 
-import com.example.springbootmongo.bean.User;
+import com.example.springbootmongo.entity.User;
 import com.example.springbootmongo.repository.UserRepository;
 import com.example.springbootmongo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.example.springbootmongo.controller;
 
-import com.example.springbootmongo.bean.User;
+import com.example.springbootmongo.entity.User;
 import com.example.springbootmongo.response.TableModel;
 import com.example.springbootmongo.service.UserService;
 import com.example.springbootmongo.utils.WebUtil;
@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller

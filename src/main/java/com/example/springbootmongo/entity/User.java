@@ -1,4 +1,4 @@
-package com.example.springbootmongo.bean;
+package com.example.springbootmongo.entity;
 
 import lombok.Data;
 

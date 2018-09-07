@@ -1,14 +1,14 @@
 package com.example.springbootmongo.service;
 
-import com.example.springbootmongo.bean.User;
 import com.example.springbootmongo.config.datasource.TargetDataSource;
+import com.example.springbootmongo.entity.User;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
 
 public interface UserService {
 
-    List<User> getUserList();
+    List<com.example.springbootmongo.entity.User> getUserList();
 
     void deleteById(Integer id);
 
