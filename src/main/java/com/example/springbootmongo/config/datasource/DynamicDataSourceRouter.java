@@ -10,7 +10,7 @@ import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
  * @version v.0.1
  */
 @Slf4j
-public class MyAbstractRoutingDataSource extends AbstractRoutingDataSource {
+public class DynamicDataSourceRouter extends AbstractRoutingDataSource {
 
     /*
      * 代码中的determineCurrentLookupKey方法取得一个字符串，

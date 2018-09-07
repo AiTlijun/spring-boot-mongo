@@ -16,8 +16,9 @@ public class DynamicDataSourceAspect {
 
     @Before("execution(* com.example.springbootmongo.service..*.find*(..)) || execution(* com.example.springbootmongo.service..*.get*(..)) || execution(* com.example.springbootmongo.service..*.select*(..))")
     public void setSlaveDataSourceType() {
-        DynamicDataSourceContextHolder.setDataSourceType( WeightRoundRobin.getDataSource());
-        log.info("Use DataSource : {} > {}" + WeightRoundRobin.getDataSource() );
+       String slaveDataSource =  WeightRoundRobin.getDataSource();
+        DynamicDataSourceContextHolder.setDataSourceType( slaveDataSource);
+        log.info("Use DataSource : {} > {}" + slaveDataSource );
     }
 
     @Before("execution(* com.example.springbootmongo.service..*.add*(..)) || execution(* com.example.springbootmongo.service..*.delete*(..)) || execution(* com.example.springbootmongo.service..*.edit*(..))")

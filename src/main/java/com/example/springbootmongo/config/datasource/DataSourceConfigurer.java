@@ -22,6 +22,7 @@ public class DataSourceConfigurer {
     @Value("${spring.datasource.type}")
     private Class<? extends DataSource> dataSourceType;
 
+
     @Primary
     @Bean(name = "masterDataSource")
     @Qualifier("masterDataSource")
@@ -52,21 +53,6 @@ public class DataSourceConfigurer {
         return DataSourceBuilder.create().type(dataSourceType).build();
     }
 
-    @Bean(name = "dynamicDataSource")
-    public AbstractRoutingDataSource routingDataSource() {
-        MyAbstractRoutingDataSource dynamicDataSource = new MyAbstractRoutingDataSource();
-        //设置默认数据源
-        DataSource master = masterDataSource();
-        DataSource slave1 = slave1DataSource();
-        DataSource slave2 = slave2DataSource();
-        dynamicDataSource.setDefaultTargetDataSource(master);
-        //配置多数据源
-        Map<Object, Object> map = new HashMap<>();
-        map.put(DataSourceType.master.getName(), master);    //key需要跟ThreadLocal中的值对应
-        map.put(DataSourceType.slave1.getName(), slave1);
-        map.put(DataSourceType.slave2.getName(), slave2);
-        dynamicDataSource.setTargetDataSources(map);
-        return dynamicDataSource;
-    }
+
 
 }
