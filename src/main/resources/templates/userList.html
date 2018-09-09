@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>8081用户管理系统</title>
+    <title>用户管理系统</title>
     <link rel="stylesheet" href="/layui/css/layui.css" media="all">
     <style>
         body {
@@ -28,7 +28,7 @@
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 
-<<!--div class="layui-tab layui-tab-brief" lay-filter="demo">
+<div class="layui-tab layui-tab-brief" lay-filter="demo">
     <ul class="layui-tab-title">
         <li class="layui-this">演示说明</li>
         <li>日期</li>
@@ -65,7 +65,7 @@
             <div id="sliderDemo" style="margin: 50px 20px;"></div>
         </div>
     </div>
-</div>-->
+</div>
 
 <blockquote class="layui-elem-quote layui-quote-nm layui-hide" id="footer">一个字，就是干！</blockquote>
 
@@ -150,7 +150,7 @@
                     //layer.msg('添加');
                     layer.open({
                         type: 1,
-                        area: '600px',
+                        area: '450px',
                         offset: '10px',
                         closeBtn: 1,
                         shadeClose: true,
@@ -186,7 +186,7 @@
                         layer.open({
                             title: '编辑',
                             type: 1,
-                            area: ['500px', '600px'],
+                            area: ['350px', '600px'],
                             content: $("#user-info-div")
                         });
                     }
@@ -258,7 +258,7 @@
                 layer.open({
                     title: '查看',
                     type: 1,
-                    area: ['500px', '600px'],
+                    area: ['350px', '600px'],
                     content: $("#user-info-div"),
                     success: function (layero, index) {
                         // layer.msg("添加成功");
@@ -312,7 +312,7 @@
                 layer.open({
                     title: '编辑',
                     type: 1,
-                    area: ['500px', '600px'],
+                    area: ['350px', '600px'],
                     content: $("#user-info-div")
                 });
             }
