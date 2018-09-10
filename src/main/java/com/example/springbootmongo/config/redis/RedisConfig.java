@@ -1,5 +1,7 @@
 package com.example.springbootmongo.config.redis;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
@@ -21,7 +23,26 @@ import java.time.Duration;
 
 @Configuration
 @EnableCaching
+@Slf4j
 public class RedisConfig extends CachingConfigurerSupport {
+
+    @Value("${spring.redis.database}")
+    private String database;
+    @Value("${spring.redis.host}")
+    private String host;
+    @Value("${spring.redis.port}")
+    private int port;
+    @Value("${spring.redis.password}")
+    private String password;
+    @Value("${spring.redis.jedis.pool.max-idle}")
+    private String max_idle;
+    @Value("${spring.redis.jedis.pool.min-idle}")
+    private String min_idle;
+    @Value("${spring.redis.jedis.pool.max-active}")
+    private String max_active;
+    @Value("${spring.redis.jedis.timeout}")
+    private String timeout;
+
 
     @Bean
     public KeyGenerator keyGenerator() {
@@ -40,16 +61,20 @@ public class RedisConfig extends CachingConfigurerSupport {
         };
     }
 
-    @Bean
+    /*@Bean
     public JedisConnectionFactory redisConnectionFactory() {
+        log.info("database:{} host:{} port:{} password:{} max_idle:{} min_idle:{} max_active:{} timeout:{} ",
+                database, host ,port, password, max_idle, min_idle, max_active, timeout);
         RedisStandaloneConfiguration redisStandaloneConfiguration=new RedisStandaloneConfiguration();
-        redisStandaloneConfiguration.setHostName(redisConfigInfo.getHost());
-        redisStandaloneConfiguration.setPort(redisConfigInfo.getPort());
+        redisStandaloneConfiguration.setHostName(host);
+        redisStandaloneConfiguration.setPort(port);
         return new JedisConnectionFactory(redisStandaloneConfiguration);
-    }
+    }*/
 
     @Bean
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory factory) {
+        log.info("database:{} host:{} port:{} password:{} max_idle:{} min_idle:{} max_active:{} timeout:{} ",
+                database, host ,port, password, max_idle, min_idle, max_active, timeout);
         RedisTemplate<Object, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(factory);
         template.setKeySerializer(new GenericJackson2JsonRedisSerializer());
@@ -61,8 +86,9 @@ public class RedisConfig extends CachingConfigurerSupport {
 
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory factory) {
+        log.info("初始化 -> [{}]", "CacheManager RedisCacheManager Start");
         RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration.defaultCacheConfig()
-                .entryTtl(Duration.ofMinutes(1)); // 设置缓存有效期一小时
+                .entryTtl(Duration.ofMinutes(2)); // 设置缓存有效期一小时
         return RedisCacheManager
                 .builder(RedisCacheWriter.nonLockingRedisCacheWriter(factory))
                 .cacheDefaults(redisCacheConfiguration).build();

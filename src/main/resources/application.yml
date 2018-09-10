@@ -85,7 +85,7 @@ spring:
         hbm2ddl:
           auto: update
    ##配置redis
-    redis:
+  redis:
       ##默认redis客户端连接为0 可修改
       database: 0
       ##连接地址 如：00.000.000.000
@@ -94,14 +94,15 @@ spring:
       port: 6379
       ##redis客户端密码
       password: 123456
-      pool:
-        ##连接池最大空闲连接
-        max-idle: 8
-        ##连接池最小空闲连接
-        min-idle: 0
-        ##连接池最大连接数
-        max-active: 8
-        ##连接池最大等待时间
-        max-wait: 1
-      ##连接超时时间
-      timeout: 5000
+      jedis:
+        pool:
+          ##连接池最大空闲连接
+          max-idle: 8
+          ##连接池最小空闲连接
+          min-idle: 0
+          ##连接池最大连接数
+          max-active: 8
+          ##连接池最大等待时间
+          max-wait: -1ms
+        ##连接超时时间
+        timeout: 5000

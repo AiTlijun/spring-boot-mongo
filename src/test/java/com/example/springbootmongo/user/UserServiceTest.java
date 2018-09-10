@@ -29,7 +29,7 @@ public class UserServiceTest {
     public void test() throws Exception {
         Date d = new Date();
         System.out.println("begin:"+d.getTime());
-        User u = userService.getUserById(12);
+        User u = userService.getUserById(13);
         Date d2 = new Date();
         System.out.println("end:"+(d2.getTime() - d.getTime())+"    name:"+u.getUserName());
 

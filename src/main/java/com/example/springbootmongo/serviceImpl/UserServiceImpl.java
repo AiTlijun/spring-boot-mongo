@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Cacheable(value="getUserList", keyGenerator = "keyGenerator")
+    @Cacheable(value="user", keyGenerator = "keyGenerator")
     @Override
     public List<User> getUserList() {
         List<User> userList = (List<User>) userRepository.findAll();
@@ -38,6 +38,7 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
     }
 
+    @Cacheable(value="user", keyGenerator = "keyGenerator")
     @Override
     public User getUserById(Integer id) {
         User user = userRepository.findById(id).get();
