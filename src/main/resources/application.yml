@@ -106,3 +106,8 @@ spring:
           max-wait: -1ms
         ##连接超时时间
         timeout: 5000
+  rabbitmq:
+    host: 120.79.237.138
+    port: 5672
+    username: guest
+    password : guest
