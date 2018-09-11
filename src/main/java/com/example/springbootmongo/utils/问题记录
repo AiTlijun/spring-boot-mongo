@@ -8,3 +8,5 @@ Validation failed for query for method public abstract boxfish.bean.Student boxf
 2.SpringMVC后台接收list类型的数据的实现方式
 
 参考：https://www.cnblogs.com/hafiz/p/5498936.html
+
+3.Cacheable 无效

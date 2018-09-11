@@ -2,7 +2,6 @@ package com.example.springbootmongo.user;
 
 import com.example.springbootmongo.entity.User;
 import com.example.springbootmongo.service.UserService;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,12 +27,36 @@ public class UserServiceTest {
     @Test
     public void test() throws Exception {
         Date d = new Date();
-        System.out.println("begin:"+d.getTime());
+        System.out.println("begin:" + d.getTime());
         User u = userService.getUserById(13);
         Date d2 = new Date();
-        System.out.println("end:"+(d2.getTime() - d.getTime())+"    name:"+u.getUserName());
+        System.out.println("end:" + (d2.getTime() - d.getTime()) + "    name:" + u.getUserName());
 
-       // Assert.assertEquals("11111", u.getId());
+        // Assert.assertEquals("11111", u.getId());
+    }
+
+
+    @Test
+    public void addUser() throws Exception {
+        for (int i = 1; i < 3000; i++) {
+            User user = new User();
+            user.setExperience(i);
+            user.setScore(i);
+            user.setSex((byte) 1);
+            user.setSign("Sign" + i);
+            user.setUserName("阿凡达" + i);
+            user.setWealth((long)(i*10));
+            user.setClassify("Classify"+i);
+            user.setCity("city" + i);
+            userService.addUser(user);
+        }
+        /*Date d = new Date();
+        System.out.println("begin:" + d.getTime());
+        User u = userService.getUserById(13);
+        Date d2 = new Date();
+        System.out.println("end:" + (d2.getTime() - d.getTime()) + "    name:" + u.getUserName());*/
+
+        // Assert.assertEquals("11111", u.getId());
     }
 
     @Test
@@ -43,7 +66,7 @@ public class UserServiceTest {
         // 获取所有value
 
         // Assert.assertEquals("11111", u.getId());
-        System.out.println("begin:"+keySet.size());
+        System.out.println("begin:" + keySet.size());
 
     }
 }
