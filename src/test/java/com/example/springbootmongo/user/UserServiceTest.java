@@ -45,8 +45,8 @@ public class UserServiceTest {
             user.setSex((byte) 1);
             user.setSign("Sign" + i);
             user.setUserName("阿凡达" + i);
-            user.setWealth((long)(i*10));
-            user.setClassify("Classify"+i);
+            user.setWealth((long) (i * 10));
+            user.setClassify("Classify" + i);
             user.setCity("city" + i);
             userService.addUser(user);
         }

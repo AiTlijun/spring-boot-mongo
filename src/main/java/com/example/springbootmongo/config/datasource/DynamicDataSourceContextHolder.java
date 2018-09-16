@@ -5,10 +5,12 @@ import java.util.List;
 
 public class DynamicDataSourceContextHolder {
 
-    private static final ThreadLocal<String> contextHolder  = new ThreadLocal<String>(){
+    private static final ThreadLocal<String> contextHolder = new ThreadLocal<String>() {
         protected String initialValue() {
             return DataSourceType.master.getType();
-        };
+        }
+
+        ;
     };
 
     /*
@@ -21,6 +23,7 @@ public class DynamicDataSourceContextHolder {
 
     /**
      * 使用setDataSourceType设置当前的
+     *
      * @param dataSourceType
      */
 
@@ -45,10 +48,10 @@ public class DynamicDataSourceContextHolder {
      * @param dataSourceId
      * @return
      * @author SHANHY
-     * @create  2016年1月24日
+     * @create 2016年1月24日
      */
 
-    public static boolean containsDataSource(String dataSourceId){
+    public static boolean containsDataSource(String dataSourceId) {
         return dataSourceIds.contains(dataSourceId);
     }
 }

@@ -16,21 +16,21 @@ public class DynamicDataSourceAspect {
 
     @Before("execution(* com.example.springbootmongo.service..*.find*(..)) || execution(* com.example.springbootmongo.service..*.get*(..)) || execution(* com.example.springbootmongo.service..*.select*(..))")
     public void setSlaveDataSourceType() {
-       String slaveDataSource =  WeightRoundRobin.getDataSource();
-        DynamicDataSourceContextHolder.setDataSourceType( slaveDataSource);
-        log.info("Use DataSource : {} > {}" + slaveDataSource );
+        String slaveDataSource = WeightRoundRobin.getDataSource();
+        DynamicDataSourceContextHolder.setDataSourceType(slaveDataSource);
+        log.info("Use DataSource : {} > {}" + slaveDataSource);
     }
 
     @Before("execution(* com.example.springbootmongo.service..*.add*(..)) || execution(* com.example.springbootmongo.service..*.delete*(..)) || execution(* com.example.springbootmongo.service..*.edit*(..))")
     public void setMasterDataSourceType() {
         DynamicDataSourceContextHolder.setDataSourceType(DataSourceType.master.getType());
-        log.info("Use DataSource : {} > {}" + DataSourceType.master.getType() );
+        log.info("Use DataSource : {} > {}" + DataSourceType.master.getType());
     }
 
     @After("execution(* com.example.springbootmongo.service..*.*(..)) ")
     public void restoreDataSource() {
         DynamicDataSourceContextHolder.clearDataSourceType();
-        log.info("Use DataSource : {} > {}" + "clear" );
+        log.info("Use DataSource : {} > {}" + "clear");
     }
     /*@Around("execution(public * com.example.springbootmongo.service..*.*(..))")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {

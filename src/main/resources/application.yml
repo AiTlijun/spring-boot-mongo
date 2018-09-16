@@ -1,5 +1,5 @@
 #application.yml
- 
+
 server:
   port: 8086
 
@@ -11,11 +11,11 @@ logging:
 spring:
   #多数据源 1主2从
   datasource:
-   #从库数量
+    #从库数量
     readSize: 2
-     # 使用druid数据源
+    # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
-  #主库
+    #主库
     master:
       url: jdbc:mysql://120.79.237.138:3306/userdb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
       username: root
@@ -84,30 +84,41 @@ spring:
         physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
         hbm2ddl:
           auto: update
-   ##配置redis
+    ##配置redis
   redis:
-      ##默认redis客户端连接为0 可修改
-      database: 0
-      ##连接地址 如：00.000.000.000
-      host: 129.28.67.193
-      ##连接端口号 默认是6379 可修改
-      port: 6379
-      ##redis客户端密码
-      password: 123456
-      jedis:
-        pool:
-          ##连接池最大空闲连接
-          max-idle: 8
-          ##连接池最小空闲连接
-          min-idle: 0
-          ##连接池最大连接数
-          max-active: 8
-          ##连接池最大等待时间
-          max-wait: -1ms
-        ##连接超时时间
-        timeout: 5000
+    ##默认redis客户端连接为0 可修改
+    database: 0
+    ##连接地址 如：00.000.000.000
+    host: 129.28.67.193
+    ##连接端口号 默认是6379 可修改
+    port: 6379
+    ##redis客户端密码
+    password: 123456
+    jedis:
+      pool:
+        ##连接池最大空闲连接
+        max-idle: 8
+        ##连接池最小空闲连接
+        min-idle: 0
+        ##连接池最大连接数
+        max-active: 8
+        ##连接池最大等待时间
+        max-wait: -1ms
+      ##连接超时时间
+      timeout: 5000
   rabbitmq:
     host: 120.79.237.138
     port: 5672
     username: guest
-    password : guest
+    password: guest
+
+  ##文件大小设置
+  http:
+    multipart:
+    enabled: true
+    max-file-size: 30MB
+    max-request-size: 30MB
+
+    ##上传文件路径
+    file:
+      uploadFolder: /file/**

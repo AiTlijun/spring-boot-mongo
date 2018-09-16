@@ -13,7 +13,8 @@ public class SpringBootMongoApplicationTests {
     @Test
     public void contextLoads() {
     }
+
     public static void main(String[] args) {
-       // SpringApplication.run(RootConfiguration.class, args);
+        // SpringApplication.run(RootConfiguration.class, args);
     }
 }

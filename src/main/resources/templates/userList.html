@@ -57,7 +57,7 @@
         </div>
         <div class="layui-tab-item">
             <div class="layui-upload-drag" id="uploadDemo">
-                <i class="layui-icon"></i>
+                <i class="layui-icon">&#xe67c;</i>
                 <p>点击上传，或将文件拖拽到此处</p>
             </div>
         </div>
@@ -411,9 +411,18 @@
         //上传
         upload.render({
             elem: '#uploadDemo'
-            , url: '' //上传接口
+            , url: '/upload' //上传接口
             , done: function (res) {
-                console.log(res)
+                if (res == '200') {
+
+                    layer.msg("上传成功！" + res)
+                }
+                else {
+                    layer.msg("上传失败！")
+                }
+            }
+            , error: function () {
+                layer.msg("上传异常！")
             }
         });
 

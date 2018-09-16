@@ -54,7 +54,7 @@ public class RedisConfig extends CachingConfigurerSupport {
                 for (Object obj : params) {
                     sb.append(obj.toString());
                 }
-               log.info("KeyGenerator------------" + sb);
+                log.info("KeyGenerator------------" + sb);
                 return sb.toString();
             }
         };
@@ -73,7 +73,7 @@ public class RedisConfig extends CachingConfigurerSupport {
     @Bean
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory factory) {
         log.info("database:{} host:{} port:{} password:{} max_idle:{} min_idle:{} max_active:{} timeout:{} ",
-                database, host ,port, password, max_idle, min_idle, max_active, timeout);
+                database, host, port, password, max_idle, min_idle, max_active, timeout);
         RedisTemplate<Object, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(factory);
         template.setKeySerializer(new GenericJackson2JsonRedisSerializer());
