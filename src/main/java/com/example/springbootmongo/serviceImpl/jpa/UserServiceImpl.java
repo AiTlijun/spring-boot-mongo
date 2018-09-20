@@ -1,4 +1,4 @@
-package com.example.springbootmongo.serviceImpl;
+package com.example.springbootmongo.serviceImpl.jpa;
 
 import com.example.springbootmongo.entity.User;
 import com.example.springbootmongo.repository.UserRepository;

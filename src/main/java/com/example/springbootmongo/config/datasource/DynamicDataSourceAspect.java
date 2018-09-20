@@ -37,7 +37,7 @@ public class DynamicDataSourceAspect {
         DynamicDataSourceContextHolder.clearDataSourceType();
         log.info("Use DataSource : {} > {}" + "clear");
     }
-    @Around("execution(public * com.example.springbootmongo.service..*.*(..))")
+    /*@Around("execution(public * com.example.springbootmongo.service..*.*(..))")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
         Method targetMethod = methodSignature.getMethod();
@@ -49,5 +49,5 @@ public class DynamicDataSourceAspect {
         Object result = pjp.proceed();//执行方法
         DynamicDataSourceContextHolder.clearDataSourceType();
         return result;
-    }
+    }*/
 }

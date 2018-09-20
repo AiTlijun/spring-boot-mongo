@@ -1,7 +1,7 @@
 package com.example.springbootmongo.user;
 
 import com.example.springbootmongo.entity.User;
-import com.example.springbootmongo.service.UserService;
+import com.example.springbootmongo.service.jpa.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

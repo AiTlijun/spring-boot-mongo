@@ -1,8 +1,10 @@
 package com.example.springbootmongo.controller;
 
 import com.example.springbootmongo.entity.User;
+import com.example.springbootmongo.entity.UserLog;
 import com.example.springbootmongo.response.TableModel;
-import com.example.springbootmongo.service.UserService;
+import com.example.springbootmongo.service.UserLogService;
+import com.example.springbootmongo.service.jpa.UserService;
 import com.example.springbootmongo.utils.WebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -21,6 +24,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserLogService userLogService;
 
     @RequestMapping("/")
     public String index() {
@@ -44,7 +49,6 @@ public class UserController {
         model.setMsg("success");
         model.setCount((int) userPage.getTotalElements());
         model.setData(userPage.getContent());
-        System.out.println(userPage.getSize());
         return model;
     }
 
@@ -52,6 +56,11 @@ public class UserController {
     public void add(HttpServletRequest req, HttpServletResponse resp, User user) {
         try {
             userService.addUser(user);
+            UserLog userLog = new UserLog();
+            userLog.setUsername("admin");
+            userLog.setOperation("add user");
+            userLog.setOperationdate(new Date());
+            userLogService.insert(userLog);
             WebUtil.writeStrToClient(resp, "200");
         } catch (Exception e) {
             WebUtil.writeStrToClient(resp, "-1");

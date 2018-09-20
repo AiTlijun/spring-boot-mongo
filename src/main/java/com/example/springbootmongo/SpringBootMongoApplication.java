@@ -1,6 +1,7 @@
 package com.example.springbootmongo;
 
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
@@ -13,6 +14,7 @@ import javax.servlet.MultipartConfigElement;
 @SpringBootApplication
 @Slf4j
 @Configuration
+@MapperScan("com.example.springbootmongo.mapper.*")
 public class SpringBootMongoApplication {
 
     public static void main(String[] args) {

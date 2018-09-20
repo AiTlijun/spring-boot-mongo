@@ -1,4 +1,4 @@
-package com.example.springbootmongo.service;
+package com.example.springbootmongo.service.jpa;
 
 import com.example.springbootmongo.entity.User;
 import org.springframework.data.domain.Page;
