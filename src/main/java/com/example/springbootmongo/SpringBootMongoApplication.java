@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.servlet.MultipartConfigElement;
 
@@ -30,5 +31,11 @@ public class SpringBootMongoApplication {
         /// 设置总上传数据总大小
         factory.setMaxRequestSize("50MB");
         return factory.createMultipartConfig();
+    }
+
+    @Bean
+    public Object testBean(PlatformTransactionManager platformTransactionManager) {
+        log.info("事务管理器:{}" + platformTransactionManager.getClass().getName());
+        return new Object();
     }
 }

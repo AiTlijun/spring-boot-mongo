@@ -2,11 +2,16 @@ package com.example.springbootmongo.config.datasource;
 
 import com.example.springbootmongo.config.datasource.loadBalance.WeightRoundRobin;
 import lombok.extern.slf4j.Slf4j;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+
+import java.lang.reflect.Method;
 
 @Aspect
 @Order(-10)//保证该AOP在@Transactional之前执行
@@ -32,7 +37,7 @@ public class DynamicDataSourceAspect {
         DynamicDataSourceContextHolder.clearDataSourceType();
         log.info("Use DataSource : {} > {}" + "clear");
     }
-    /*@Around("execution(public * com.example.springbootmongo.service..*.*(..))")
+    @Around("execution(public * com.example.springbootmongo.service..*.*(..))")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
         Method targetMethod = methodSignature.getMethod();
@@ -44,5 +49,5 @@ public class DynamicDataSourceAspect {
         Object result = pjp.proceed();//执行方法
         DynamicDataSourceContextHolder.clearDataSourceType();
         return result;
-    }*/
+    }
 }
