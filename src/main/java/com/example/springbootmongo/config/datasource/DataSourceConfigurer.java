@@ -54,13 +54,13 @@ public class DataSourceConfigurer {
     }
 
     /**
-     * 有多少个从库就要配置多少个
+     * mybatis
      *
      * @return
      */
     @Bean(name = "mybatisDataSource")
     @Qualifier("mybatisDataSource")
-    @ConfigurationProperties(prefix = "spring.datasource.mybatisDataSource")
+    @ConfigurationProperties(prefix = "spring.datasource.mybatis")
     public DataSource mybatisDataSource() {
         log.info("-------------------- mybatisDataSource init ---------------------");
         return DataSourceBuilder.create().type(dataSourceType).build();

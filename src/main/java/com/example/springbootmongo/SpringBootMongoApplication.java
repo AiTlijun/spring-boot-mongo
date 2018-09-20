@@ -14,7 +14,7 @@ import javax.servlet.MultipartConfigElement;
 @SpringBootApplication
 @Slf4j
 @Configuration
-@MapperScan("com.example.springbootmongo.mapper.*")
+@MapperScan("com.example.springbootmongo.mapper")
 public class SpringBootMongoApplication {
 
     public static void main(String[] args) {

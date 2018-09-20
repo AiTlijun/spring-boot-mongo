@@ -19,20 +19,20 @@ import java.lang.reflect.Method;
 @Slf4j
 public class DynamicDataSourceAspect {
 
-    @Before("execution(* com.example.springbootmongo.service..*.find*(..)) || execution(* com.example.springbootmongo.service..*.get*(..)) || execution(* com.example.springbootmongo.service..*.select*(..))")
+    @Before("execution(* com.example.springbootmongo.service.jpa..*.find*(..)) || execution(* com.example.springbootmongo.service.jpa..*.get*(..)) || execution(* com.example.springbootmongo.service.jpa..*.select*(..))")
     public void setSlaveDataSourceType() {
         String slaveDataSource = WeightRoundRobin.getDataSource();
         DynamicDataSourceContextHolder.setDataSourceType(slaveDataSource);
         log.info("Use DataSource : {} > {}" + slaveDataSource);
     }
 
-    @Before("execution(* com.example.springbootmongo.service..*.add*(..)) || execution(* com.example.springbootmongo.service..*.delete*(..)) || execution(* com.example.springbootmongo.service..*.edit*(..))")
+    @Before("execution(* com.example.springbootmongo.service.jpa..*.add*(..)) || execution(* com.example.springbootmongo.service.jpa..*.delete*(..)) || execution(* com.example.springbootmongo.service.jpa..*.edit*(..))")
     public void setMasterDataSourceType() {
         DynamicDataSourceContextHolder.setDataSourceType(DataSourceType.master.getType());
         log.info("Use DataSource : {} > {}" + DataSourceType.master.getType());
     }
 
-    @After("execution(* com.example.springbootmongo.service..*.*(..)) ")
+    @After("execution(* com.example.springbootmongo.service.jpa..*.*(..)) ")
     public void restoreDataSource() {
         DynamicDataSourceContextHolder.clearDataSourceType();
         log.info("Use DataSource : {} > {}" + "clear");

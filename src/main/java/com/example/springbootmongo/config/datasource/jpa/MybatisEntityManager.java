@@ -38,13 +38,11 @@ public class MybatisEntityManager {
 
 
     @Bean(name = "mybatisTransactionManager")
-    @Primary
     public DataSourceTransactionManager mybatisTransactionManager() {
         return new DataSourceTransactionManager(mybatisDataSource);
     }
 
     @Bean(name = "mybatisSqlSessionFactory")
-    @Primary
     public SqlSessionFactory mybatisSqlSessionFactory(@Qualifier("mybatisDataSource") DataSource mybatisDataSource)
             throws Exception {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();

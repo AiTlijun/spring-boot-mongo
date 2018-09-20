@@ -21,9 +21,9 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.example.springbootmongo.entity.UserLog">
-    insert into user_log (id, userName, operation, 
+    insert into user_log (userName, operation,
       operationDate)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{operation,jdbcType=VARCHAR}, 
+    values (#{username,jdbcType=VARCHAR}, #{operation,jdbcType=VARCHAR},
       #{operationdate,jdbcType=DATE})
   </insert>
   <insert id="insertSelective" parameterType="com.example.springbootmongo.entity.UserLog">

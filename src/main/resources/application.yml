@@ -73,7 +73,7 @@ spring:
       testOnReturn: false
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
-    mybatisDataSource:
+    mybatis:
       url: jdbc:mysql://cd-cdb-kd7i5dsa.sql.tencentcdb.com:63647/userdb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
       username: root
       password: Q1w2e3r4!
