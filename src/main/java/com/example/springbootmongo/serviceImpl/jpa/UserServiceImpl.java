@@ -29,28 +29,28 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RedisService redisService;
 
-    @Cacheable(value = "user", keyGenerator = "keyGenerator")
+   // @Cacheable(value = "user", keyGenerator = "keyGenerator")
     @Override
     public List<User> getUserList() {
         List<User> userList = (List<User>) userRepository.findAll();
         return userList;
     }
 
-    @CacheEvict(value = "user", keyGenerator = "keyGenerator")
+    //@CacheEvict(value = "user", keyGenerator = "keyGenerator")
     @Override
     public void deleteById(Integer id) {
         log.info("form DB deleteById:{}" + id);
         userRepository.deleteById(id);
     }
 
-    @CacheEvict(value = "user", keyGenerator = "keyGenerator")
+    //@CacheEvict(value = "user", keyGenerator = "keyGenerator")
     @Override
     public void addUser(User user) {
         log.info("form DB addUser:{}" + user.getUserName());
         userRepository.save(user);
     }
 
-    @Cacheable(value = "user", keyGenerator = "keyGenerator")
+    //@Cacheable(value = "user", keyGenerator = "keyGenerator")
     @Override
     public User getUserById(Integer id) {
         log.info("form DB getUserById:{}" + id);
@@ -58,14 +58,14 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
-    @CachePut(value = "user", keyGenerator = "keyGenerator")
+    //@CachePut(value = "user", keyGenerator = "keyGenerator")
     @Override
     public void editUserById(User user) {
         log.info("form DB editUserById:{}" + user.getId());
         userRepository.save(user);
     }
 
-    @Cacheable(value = "user", keyGenerator = "keyGenerator")
+   // @Cacheable(value = "user", keyGenerator = "keyGenerator")
     @Override
     public Page<User> getUserPage(Integer pageOffset, Integer pageSize) {
         log.info("form DB getUserPage pageOffset:{}" + pageOffset);
@@ -74,7 +74,7 @@ public class UserServiceImpl implements UserService {
         return pageUser;
     }
 
-    @CacheEvict(value = "user", keyGenerator = "keyGenerator")
+   // @CacheEvict(value = "user", keyGenerator = "keyGenerator")
     @Override
     public void deleteBath(List<Integer> brandIds) {
         log.info("form DB deleteBath:{}" + brandIds);
