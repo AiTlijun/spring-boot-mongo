@@ -43,6 +43,7 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteById(id);
     }
 
+    @CacheEvict(value = "user", keyGenerator = "keyGenerator")
     @Override
     public void addUser(User user) {
         log.info("form DB addUser:{}" + user.getUserName());
