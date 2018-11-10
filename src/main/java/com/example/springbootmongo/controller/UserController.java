@@ -47,6 +47,7 @@ public class UserController {
         Page<User> userPage = userService.getUserPage(page, limit);
         model.setCode(200);
         model.setMsg("success");
+        model.setServerIp(WebUtil.getServerIp());
         model.setCount((int) userPage.getTotalElements());
         model.setData(userPage.getContent());
         return model;

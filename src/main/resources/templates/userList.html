@@ -19,10 +19,14 @@
     </style>
 </head>
 <body>
-<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
-<script type="text/javascript">
-    document.write("当前服务器IP："+returnCitySN["cip"]+',坐标：'+returnCitySN["cname"])
-</script>
+
+<!--<script type="text/javascript">
+    document.write("服务器IP");
+    var ss = ${serverIp};
+    document.write("服务器IP：" + ss);
+</script>-->
+<input type="text" class="form-control1" id="serverIp" name="serverIp" value="">
+
 <table class="layui-hide" id="demo" lay-filter="test"></table>
 
 <script type="text/html" id="barDemo">
@@ -70,7 +74,12 @@
     </div>
 </div>
 
-<blockquote class="layui-elem-quote layui-quote-nm layui-hide" id="footer">welcom，悄悄话！</blockquote>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">
+    document.write("IP：" + returnCitySN["cip"] + ',坐标：' + returnCitySN["cname"]);
+    document.write("服务器IP");
+</script>
+<blockquote class="layui-elem-quote layui-quote-nm layui-hide" id="footer">举头望明月</blockquote>
 
 
 <script src="/layui/layui.js"></script>
@@ -133,7 +142,9 @@
                     , {fixed: 'right', width: 165, align: 'center', toolbar: '#barDemo'}
                 ]
             ]
-            , done: function (res, curr, count) {    //res 接口返回的信息
+            , done: function (res, curr, count) {    //res
+                //alert(res.serverIp);
+                $("#serverIp").val(res.serverIp);
                 $("[data-field = 'sex']").children().each(function () {
                     if ($(this).text() == '1') {
                         $(this).text("男");
@@ -441,6 +452,9 @@
     });
 </script>
 
+<h6>
+    ${serverIp}登录成功！
+</h6>
 </body>
 
 <div class="user-info-div" id="user-info-div" style="display: none;">

@@ -6,6 +6,7 @@ public class TableModel<T> {
 
     private int code;
     private String msg;
+    private String serverIp;
     private int count;
     private List<T> data;
 
@@ -54,5 +55,13 @@ public class TableModel<T> {
 
     public void setData(List<T> data) {
         this.data = data;
+    }
+
+    public String getServerIp() {
+        return serverIp;
+    }
+
+    public void setServerIp(String serverIp) {
+        this.serverIp = serverIp;
     }
 }
