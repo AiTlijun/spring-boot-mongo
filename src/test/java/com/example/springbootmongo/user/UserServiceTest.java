@@ -29,8 +29,8 @@ public class UserServiceTest {
     @Autowired
     private UserLogService userLogService;
 
-    private int ThreadNum = 10;
-    public CountDownLatch countDownLatch = new CountDownLatch(1);
+    private int ThreadNum = 2000;
+
 
     @Test
     public void test() throws Exception {
@@ -45,32 +45,42 @@ public class UserServiceTest {
 
     @Test
     public void addUserCountDownLatch() throws Exception {
+        CountDownLatch countDownLatch = new CountDownLatch(ThreadNum);
         long start = System.currentTimeMillis();
         for (int i = 0; i < ThreadNum; i++) {
-            LatchDemo ld = new LatchDemo();
+            LatchDemo ld = new LatchDemo(countDownLatch);
             new Thread(ld).start();
         }
-        countDownLatch.countDown();
+        // 等待所有线程操作完成
+        System.out.println("当等待所有线程操作完成");
+
+        countDownLatch.await();
         long end = System.currentTimeMillis();
         System.out.println("耗费时间为:" + (end - start));
     }
 
     class LatchDemo implements Runnable {
+        private final CountDownLatch countDownLatch;
 
+        public LatchDemo(CountDownLatch countDownLatch) {
+            this.countDownLatch = countDownLatch;
+        }
         public void run() {
 
             System.out.println("当前线程:" + Thread.currentThread().getName() + "准备就绪, 等待countdown为0后开始运行....");
-            try {
-                countDownLatch.await();
-            }catch (Exception e) {
-                e.printStackTrace();
-            }
+
             UserLog userLog = new UserLog();
             userLog.setUsername( Thread.currentThread().getId()+"");
             userLog.setOperation("admin");
             userLog.setOperationdate(new Date());
             userLogService.insert(userLog);
-
+            try {
+                // 线程结束操作
+                countDownLatch.countDown();
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+            System.out.println("当前线程:" + Thread.currentThread().getName() + "准备就绪, 添加数据成功....");
         }
     }
 
