@@ -19,7 +19,7 @@ spring:
     master:
       url: jdbc:mysql://120.79.237.138:3306/userdb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
       username: root
-      password: 1Q2w3e4r!
+      password: Q1w2e3r4!
       driver-class-name: com.mysql.jdbc.Driver
       filters: stat
       maxActive: 20

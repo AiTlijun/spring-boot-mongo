@@ -1,0 +1,461 @@
+2018-11-10 17:40:47,094 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 11180 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 17:40:47,102 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 17:40:47,105 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 17:40:50,703 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 17:40:52,086 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 17:40:52,347 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 17:40:52,385 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 17:40:53,213 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 17:40:55,268 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 17:40:55,386 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 17:40:56,913 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 17:40:57,757 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 17:40:57,785 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 17:41:00,391 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 14.625 seconds (JVM running for 17.179)
+2018-11-10 17:41:00,396 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 17:41:15,437 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 17:41:15,442 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 17:41:15,680 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:41:16,342 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:41:16,350 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 17:41:16,593 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 17:43:49,417 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 17:43:49,418 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 17:43:50,444 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:43:50,496 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:43:50,497 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 17:43:50,681 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 17:44:00,030 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 17:44:00,031 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 17:44:00,079 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:44:00,218 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 17:44:09,547 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 17:44:09,548 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 17:44:09,569 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:44:09,637 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 17:44:13,776 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 17:44:13,776 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 17:44:13,818 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:44:13,947 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 17:44:46,609 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 10648 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 17:44:46,610 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 17:44:46,612 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 17:44:49,460 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 17:44:50,588 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 17:44:50,847 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 17:44:50,887 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 17:44:51,467 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 17:44:52,883 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 17:44:53,044 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 17:44:54,307 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 17:44:54,989 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 17:44:55,010 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 17:44:57,476 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.773 seconds (JVM running for 13.942)
+2018-11-10 17:44:57,482 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 17:45:22,214 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 17:45:22,220 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 17:45:22,469 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 17:45:23,136 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:49:54,002 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 13016 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 18:49:54,005 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 18:49:54,009 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 18:49:57,236 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 18:49:58,478 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 18:49:58,727 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 18:49:58,764 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 18:49:59,580 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:50:01,469 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:50:01,584 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 18:50:03,079 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 18:50:03,928 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 18:50:03,959 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 18:50:06,508 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 13.554 seconds (JVM running for 15.758)
+2018-11-10 18:50:06,513 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 18:50:23,037 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:50:23,044 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:50:23,265 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:50:24,076 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:50:25,333 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:50:25,334 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:50:26,008 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:50:26,130 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:51:45,003 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 12428 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 18:51:45,004 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 18:51:45,006 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 18:51:47,636 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 18:51:48,632 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 18:51:48,867 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 18:51:48,904 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 18:51:49,458 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:51:50,882 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:51:51,006 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 18:51:52,167 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 18:51:52,865 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 18:51:52,891 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 18:51:55,222 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.07 seconds (JVM running for 13.908)
+2018-11-10 18:51:55,229 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 18:52:00,927 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:52:00,932 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:52:01,197 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:01,905 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:05,947 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:52:05,948 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:52:06,645 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:06,769 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:07,736 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:52:07,737 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:52:07,783 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:07,911 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:08,644 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:52:08,645 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:52:08,656 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:08,721 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:09,277 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:52:09,277 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:52:09,322 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:09,446 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:09,923 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:52:09,924 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:52:09,970 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:10,105 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:10,126 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:52:10,127 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:52:10,140 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:10,205 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:10,438 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:52:10,439 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:52:10,478 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:52:10,602 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:52:55,711 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 11948 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 18:52:55,713 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 18:52:55,715 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 18:52:58,481 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 18:52:59,612 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 18:52:59,845 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 18:52:59,886 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 18:53:00,452 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:53:01,845 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:53:01,969 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 18:53:03,224 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 18:53:03,878 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 18:53:03,902 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 18:53:06,392 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.713 seconds (JVM running for 13.508)
+2018-11-10 18:53:06,398 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 18:53:16,659 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:53:16,664 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:53:16,914 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:53:17,568 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:53:17,574 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 18:53:17,812 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:53:25,807 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:53:25,808 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:53:26,487 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:53:26,631 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:53:32,313 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:53:32,314 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:53:32,356 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:53:32,476 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:54:47,718 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 7364 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 18:54:47,718 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 18:54:47,721 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 18:54:50,371 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 18:54:51,447 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 18:54:51,702 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 18:54:51,743 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 18:54:52,299 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:54:53,594 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:54:53,706 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 18:54:54,991 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 18:54:55,639 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 18:54:55,666 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 18:54:58,098 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.793 seconds (JVM running for 14.192)
+2018-11-10 18:54:58,104 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 18:55:02,428 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:55:02,433 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:55:02,647 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:55:03,347 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:55:06,325 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:55:06,326 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:55:06,957 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:55:07,080 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:55:12,119 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 18:55:12,119 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 18:55:12,166 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:55:12,293 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:56:13,165 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 4968 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 18:56:13,166 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 18:56:13,168 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 18:56:15,747 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 18:56:16,811 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 18:56:17,039 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 18:56:17,076 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 18:56:17,644 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:56:19,067 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:56:19,208 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 18:56:20,448 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 18:56:21,096 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 18:56:21,117 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 18:56:23,474 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.967 seconds (JVM running for 14.129)
+2018-11-10 18:56:23,479 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 18:56:28,808 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:56:28,813 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:56:29,058 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:56:29,688 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:56:29,696 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 18:56:29,896 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 18:56:45,970 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 6576 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 18:56:45,972 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 18:56:45,975 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 18:56:48,616 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 18:56:49,715 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 18:56:49,931 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 18:56:49,969 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 18:56:50,527 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:56:51,834 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 18:56:51,942 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 18:56:53,188 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 18:56:53,872 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 18:56:53,895 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 18:56:56,269 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 12.221 seconds (JVM running for 14.652)
+2018-11-10 18:56:56,273 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 18:57:07,450 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 18:57:07,455 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 18:57:07,727 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 18:57:08,484 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 19:19:56,476 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 14024 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 19:19:56,477 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 19:19:56,481 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 19:20:02,507 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 19:20:05,028 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 19:20:05,394 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 19:20:05,470 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 19:20:06,841 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:20:09,812 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:20:10,024 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 19:20:12,559 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 19:20:14,154 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 19:20:14,197 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 19:20:18,584 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 23.574 seconds (JVM running for 27.997)
+2018-11-10 19:20:18,592 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 19:35:25,712 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 19:35:25,722 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 19:35:26,060 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:35:27,232 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:35:27,243 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 19:35:27,623 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 19:40:52,797 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 14172 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 19:40:52,798 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 19:40:52,801 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 19:40:56,960 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 19:40:58,802 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 19:40:59,114 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 19:40:59,161 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 19:41:00,315 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:41:02,899 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:41:03,165 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 19:41:05,645 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 19:41:07,279 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 19:41:07,314 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 19:41:11,560 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 19.836 seconds (JVM running for 23.979)
+2018-11-10 19:41:11,572 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 19:42:02,337 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 19:42:02,347 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 19:42:02,583 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:42:03,662 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:42:03,675 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 19:42:03,962 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 19:42:33,660 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 19:42:33,661 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 19:42:34,449 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:42:34,608 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 19:49:06,221 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 10808 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 19:49:06,221 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 19:49:06,224 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 19:49:09,724 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 19:49:11,067 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 19:49:11,312 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 19:49:11,357 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 19:49:12,204 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:49:13,983 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:49:14,119 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 19:49:15,525 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 19:49:16,283 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 19:49:16,306 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 19:49:18,938 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 13.903 seconds (JVM running for 16.02)
+2018-11-10 19:49:18,945 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 19:50:51,607 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 19:50:51,613 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 19:50:51,851 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:50:52,522 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:50:52,529 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 19:50:52,733 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 19:53:42,140 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 14656 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 19:53:42,141 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 19:53:42,144 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 19:53:44,711 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 19:53:45,737 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 19:53:45,948 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 19:53:45,986 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 19:53:46,558 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:53:47,884 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 19:53:47,992 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 19:53:49,223 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 19:53:49,898 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 19:53:49,919 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 19:53:52,246 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 10.877 seconds (JVM running for 13.29)
+2018-11-10 19:53:52,250 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 19:54:10,663 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 19:54:10,668 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 19:54:10,863 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:54:11,521 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 19:54:11,529 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 19:54:11,721 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:00:41,755 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 14900 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 20:00:41,755 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 20:00:41,758 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 20:00:44,878 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 20:00:45,909 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 20:00:46,130 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 20:00:46,166 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 20:00:46,746 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:00:48,039 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:00:48,157 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 20:00:49,357 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 20:00:50,109 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 20:00:50,130 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 20:00:52,527 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.55 seconds (JVM running for 13.099)
+2018-11-10 20:00:52,534 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 20:00:58,166 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 20:00:58,170 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 20:00:58,376 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:00:59,050 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:00:59,058 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 20:00:59,237 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:02:56,948 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 14664 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 20:02:56,949 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 20:02:56,952 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 20:02:59,792 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 20:03:00,806 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 20:03:01,027 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 20:03:01,065 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 20:03:01,667 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:03:03,119 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:03:03,234 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 20:03:04,488 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 20:03:05,140 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 20:03:05,163 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 20:03:07,580 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.753 seconds (JVM running for 14.861)
+2018-11-10 20:03:07,588 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 20:03:12,001 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 20:03:12,006 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 20:03:12,302 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:03:12,951 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:03:12,958 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 20:03:13,157 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:04:16,390 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 20:04:16,390 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 20:04:17,052 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:04:17,187 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:04:29,920 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 20:04:29,921 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 20:04:29,961 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:04:30,082 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:05:02,248 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 20:05:02,249 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 20:05:02,267 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:05:02,336 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:05:33,096 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 15084 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 20:05:33,098 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 20:05:33,104 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 20:05:35,980 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 20:05:37,155 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 20:05:37,396 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 20:05:37,433 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 20:05:38,382 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:05:40,212 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:05:40,385 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 20:05:42,015 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 20:05:43,226 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 20:05:43,256 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 20:05:46,241 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 15.54 seconds (JVM running for 18.055)
+2018-11-10 20:05:46,246 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 20:13:12,389 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 16356 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 20:13:12,390 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 20:13:12,394 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 20:13:15,226 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 20:13:16,438 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 20:13:16,668 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 20:13:16,705 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 20:13:17,483 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:13:19,081 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:13:19,193 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 20:13:20,587 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 20:13:21,280 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 20:13:21,303 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 20:13:23,748 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 12.272 seconds (JVM running for 14.779)
+2018-11-10 20:13:23,754 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 20:13:31,536 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 20:13:31,543 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 20:13:31,775 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:13:32,541 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:13:32,548 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 20:13:32,783 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:16:52,364 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 15696 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 20:16:52,366 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 20:16:52,370 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 20:16:55,333 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 20:16:56,377 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 20:16:56,596 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 20:16:56,633 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 20:16:57,207 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:16:58,593 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:16:58,718 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 20:16:59,882 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 20:17:00,532 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 20:17:00,556 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 20:17:02,957 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.392 seconds (JVM running for 13.516)
+2018-11-10 20:17:02,964 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 20:17:09,785 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 20:17:09,793 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 20:17:10,002 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:17:10,662 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:17:10,670 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 20:17:10,862 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:17:31,214 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 15616 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 20:17:31,215 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 20:17:31,218 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 20:17:34,032 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 20:17:35,122 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 20:17:35,348 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 20:17:35,390 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 20:17:36,101 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:17:37,549 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 20:17:37,674 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 20:17:38,816 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 20:17:39,509 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 20:17:39,532 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager
+2018-11-10 20:17:41,927 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 11.665 seconds (JVM running for 13.844)
+2018-11-10 20:17:41,935 INFO (SpringBootMongoApplication.java:23)- ------启动成功-----
+2018-11-10 20:22:26,062 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave2
+2018-11-10 20:22:26,066 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-11-10 20:22:26,274 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:22:26,896 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:22:26,905 INFO (UserServiceImpl.java:70)- form DB getUserPage pageOffset:{}1
+2018-11-10 20:22:27,106 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 20:23:06,123 INFO (DynamicDataSourceAspect.java:26)- Use DataSource : {} > {}slave1
+2018-11-10 20:23:06,124 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-11-10 20:23:06,782 INFO (RedisConfig.java:57)- KeyGenerator------------com.example.springbootmongo.serviceImpl.jpa.UserServiceImpl-getUserPage110
+2018-11-10 20:23:06,914 INFO (DynamicDataSourceAspect.java:38)- Use DataSource : {} > {}clear
+2018-11-10 23:00:50,029 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 16888 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-11-10 23:00:50,030 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-10 23:00:50,033 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-11-10 23:00:53,500 INFO (SpringBootMongoApplication.java:28)- ------设置文件大小-----
+2018-11-10 23:00:54,851 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-11-10 23:00:55,081 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-11-10 23:00:55,117 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-11-10 23:00:55,906 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 23:00:57,971 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-11-10 23:00:58,110 INFO (DataSourceConfigurer.java:65)- -------------------- mybatisDataSource init ---------------------
+2018-11-10 23:00:59,568 INFO (RedisConfig.java:75)- database:0 host:132.232.182.241 port:6379 password:123456 max_idle:8 min_idle:0 max_active:8 timeout:5000 
+2018-11-10 23:01:00,410 INFO (RedisConfig.java:88)- 初始化 -> [CacheManager RedisCacheManager Start]
+2018-11-10 23:01:00,451 INFO (SpringBootMongoApplication.java:40)- 事务管理器:{}org.springframework.orm.jpa.JpaTransactionManager

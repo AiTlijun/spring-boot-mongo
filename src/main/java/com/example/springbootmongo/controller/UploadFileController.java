@@ -1,11 +1,13 @@
 package com.example.springbootmongo.controller;
 
 import com.example.springbootmongo.entity.User;
+import com.example.springbootmongo.response.UploadPicRequest;
 import com.example.springbootmongo.utils.WebUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,13 +18,16 @@ import javax.sql.DataSource;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 @Controller
 @Slf4j
+@RequestMapping(value = "/file")
 public class UploadFileController {
 
-    @RequestMapping(value = "upload")
+    @RequestMapping(value = "/upload")
     public void upload(HttpServletRequest req, HttpServletResponse resp, @RequestParam(value = "file") MultipartFile file) {
         try {
             if (file.isEmpty()) {
@@ -30,9 +35,9 @@ public class UploadFileController {
             }
             String fileName = file.getOriginalFilename();  // 文件名
             String suffixName = fileName.substring(fileName.lastIndexOf("."));  // 后缀名
-            String filePath = req.getSession().getServletContext().getRealPath( File.separator) + "file"+ File.separator; // 上传后的路径
+            String filePath = req.getSession().getServletContext().getRealPath(File.separator) + "file" + File.separator; // 上传后的路径
             //String filePath = "E://test//";
-           // String filePath = "src/main/resources/static/file/";
+            // String filePath = "src/main/resources/static/file/";
 
             log.info("filePath { }" + filePath);
             fileName = UUID.randomUUID() + suffixName; // 新文件名
@@ -50,6 +55,13 @@ public class UploadFileController {
         } catch (Exception e) {
             WebUtil.writeStrToClient(resp, "-1");
         }
+        return;
+    }
+
+    @RequestMapping(value = "/uploadPic")
+    public void uploadPic(HttpServletRequest req, HttpServletResponse resp,
+                          @RequestBody UploadPicRequest uploadPicRequest) {
+        log.info("controller test................" + uploadPicRequest.getUsers().get(1).getUserName());
         return;
     }
 }

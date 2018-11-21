@@ -1,0 +1,558 @@
+2018-09-07 18:12:22,554 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 4016 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:12:22,554 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:12:22,554 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:12:26,594 INFO (DataSourceConfigurer.java:43)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:12:26,813 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:12:30,307 INFO (DataSourceConfigurer.java:51)- -------------------- slave2DataSource init ---------------------
+2018-09-07 18:20:59,574 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5020 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:20:59,575 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:20:59,578 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:21:02,490 INFO (DataSourceConfigurer.java:43)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:21:02,650 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:21:05,259 INFO (DataSourceConfigurer.java:51)- -------------------- slave2DataSource init ---------------------
+2018-09-07 18:26:48,261 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 4304 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:26:48,262 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:26:48,266 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:26:51,887 INFO (DataSourceConfigurer.java:43)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:26:52,052 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:26:54,663 INFO (DataSourceConfigurer.java:51)- -------------------- slave2DataSource init ---------------------
+2018-09-07 18:28:16,773 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 3916 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:28:16,773 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:28:16,778 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:28:20,517 INFO (DataSourceConfigurer.java:43)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:28:20,721 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:28:23,392 INFO (DataSourceConfigurer.java:51)- -------------------- slave2DataSource init ---------------------
+2018-09-07 18:30:24,834 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5488 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:30:24,836 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:30:24,841 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:30:27,894 INFO (DataSourceConfigurer.java:43)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:30:28,055 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:30:30,605 INFO (DataSourceConfigurer.java:51)- -------------------- slave2DataSource init ---------------------
+2018-09-07 18:31:02,729 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 6056 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:31:02,730 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:31:02,733 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:31:06,964 INFO (DataSourceConfigurer.java:43)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:31:07,147 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:31:09,693 INFO (DataSourceConfigurer.java:51)- -------------------- slave2DataSource init ---------------------
+2018-09-07 18:34:35,263 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2392 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:34:35,264 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:34:35,267 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:34:38,615 INFO (DataSourceConfigurer.java:42)- -------------------- slave1DataSource init ---------------------
+2018-09-07 18:36:08,305 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 3984 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:36:08,306 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:36:08,308 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:36:11,279 INFO (DataSourceConfigurer.java:29)- -------- masterDataSource init ---------------------
+2018-09-07 18:40:11,550 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5704 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:40:11,551 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:40:11,553 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:40:14,494 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:41:55,486 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 4164 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:41:55,488 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:41:55,492 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:41:59,162 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:44:34,929 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2696 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:44:34,931 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:44:34,935 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:44:38,345 INFO (DataSourceConfigurer.java:30)- -------- masterDataSource init ---------------------
+2018-09-07 18:54:12,707 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 4788 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:54:12,707 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:54:12,710 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:54:15,626 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 18:57:22,853 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5276 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 18:57:22,909 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 18:57:22,911 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 18:57:26,062 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 18:57:26,074 INFO (DataSourceConfigurer.java:33)- -------- masterDataSource init ---------------------{
+	CreateTime:"2018-09-07 18:57:26",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:0,
+	Connections:[
+	]
+}
+2018-09-07 19:08:38,750 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2468 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 19:08:38,751 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 19:08:38,803 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 19:08:41,658 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 19:10:47,218 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5708 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 19:10:47,219 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 19:10:47,221 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 19:10:50,191 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 19:37:49,414 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2096 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 19:37:49,415 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 19:37:49,418 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 19:37:52,696 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 19:37:52,861 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 19:37:52,891 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 19:37:54,050 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 19:37:54,794 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 19:37:54,803 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 19:37:57,126 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.496 seconds (JVM running for 9.915)
+2018-09-07 19:37:57,130 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 19:38:12,577 INFO (DynamicDataSourceAspect.java:20)- Use DataSource : {} > {}slave1
+2018-09-07 19:38:12,615 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 19:38:12,981 INFO (DynamicDataSourceAspect.java:32)- Use DataSource : {} > {}clear
+2018-09-07 20:01:03,995 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 1172 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 20:01:03,997 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 20:01:04,004 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 20:01:08,741 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 20:01:08,948 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 20:01:08,983 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 20:01:51,804 INFO (JpaEntityManager.java:66)- physical_naming_strategy:{}org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+2018-09-07 20:03:07,314 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 4704 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 20:03:07,316 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 20:03:07,324 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 20:03:10,636 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 20:03:10,803 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 20:03:10,837 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 20:03:11,510 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 20:03:15,398 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 9.094 seconds (JVM running for 10.671)
+2018-09-07 20:03:15,401 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 20:03:23,692 INFO (DynamicDataSourceAspect.java:20)- Use DataSource : {} > {}slave1
+2018-09-07 20:03:23,732 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 20:03:24,058 INFO (DynamicDataSourceAspect.java:32)- Use DataSource : {} > {}clear
+2018-09-07 20:03:39,477 INFO (DynamicDataSourceAspect.java:20)- Use DataSource : {} > {}slave2
+2018-09-07 20:03:39,478 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:03:40,275 INFO (DynamicDataSourceAspect.java:32)- Use DataSource : {} > {}clear
+2018-09-07 20:06:34,088 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 6596 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 20:06:34,089 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 20:06:34,091 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 20:06:37,570 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 20:06:37,754 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 20:06:37,789 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 20:06:38,291 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 20:06:41,716 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.287 seconds (JVM running for 9.638)
+2018-09-07 20:06:41,720 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 20:48:35,757 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 3972 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 20:48:35,758 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 20:48:35,770 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 20:48:40,674 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 20:48:40,890 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 20:48:40,929 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 20:48:41,846 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 20:48:46,471 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 12.039 seconds (JVM running for 14.34)
+2018-09-07 20:48:46,475 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 20:48:53,780 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 20:48:53,841 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 20:48:54,740 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:49:27,237 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 20:49:27,238 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:49:28,064 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:49:41,691 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 20:49:41,692 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:49:41,941 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:49:44,613 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 20:49:44,614 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 20:49:44,838 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:50:54,650 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 20:50:54,651 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:50:54,929 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:51:01,939 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 20:51:01,940 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:51:02,186 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:51:05,946 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 20:51:05,947 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 20:51:06,201 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:51:06,917 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 20:51:06,917 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:51:07,168 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:51:07,800 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 20:51:07,801 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 20:51:08,046 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 20:51:08,679 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 20:51:08,681 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 20:51:08,903 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:26:46,195 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:26:46,196 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:26:46,319 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:26:46,320 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:26:47,048 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:26:47,048 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:26:47,246 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:26:47,247 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:26:47,406 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:26:47,407 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:26:47,532 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:26:47,799 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:26:47,996 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:26:48,927 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:26:48,928 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:26:49,676 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:26:49,937 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:26:49,938 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:26:50,160 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:05,328 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:08,569 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:11,228 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 21:27:11,229 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:27:14,251 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 21:27:14,252 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:27:14,695 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:27:14,990 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:15,165 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:27:15,166 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:27:15,423 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:30,139 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:27:30,233 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:41,431 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:27:41,432 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:27:41,654 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:42,245 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:27:42,246 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:27:42,502 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:42,930 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:27:42,931 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:27:43,185 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:27:43,186 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:27:43,187 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:43,409 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:27:43,577 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:27:43,578 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:27:43,831 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:38:45,410 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:38:45,412 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:38:54,606 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 21:38:54,608 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:39:05,109 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:39:13,728 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:39:14,031 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:39:14,212 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:39:14,213 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:39:33,829 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:45:15,853 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2028 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 21:45:15,854 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 21:45:15,856 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 21:45:18,905 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 21:45:19,071 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 21:45:19,102 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 21:45:19,573 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 21:45:23,047 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 7.945 seconds (JVM running for 9.481)
+2018-09-07 21:45:23,051 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 21:45:39,441 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:45:39,467 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:45:40,339 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:45:54,504 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 21:45:54,506 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:45:54,525 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:45:54,801 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:46:59,562 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 6076 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 21:46:59,562 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 21:46:59,565 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 21:47:02,497 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 21:47:02,663 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 21:47:02,695 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 21:47:03,172 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 21:47:06,672 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.096 seconds (JVM running for 9.6)
+2018-09-07 21:47:06,676 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 21:50:58,894 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 7400 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 21:50:58,895 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 21:50:58,898 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 21:51:01,845 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 21:51:02,018 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 21:51:02,048 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 21:51:02,536 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 21:51:05,942 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 7.877 seconds (JVM running for 9.275)
+2018-09-07 21:51:05,947 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 21:51:31,575 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 21:51:31,614 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 21:51:32,495 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:52:56,567 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 21:52:56,568 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 21:52:57,419 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:53:20,687 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 21:53:20,688 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:53:20,722 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 21:53:20,945 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 21:55:46,555 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 7696 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 21:55:46,556 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 21:55:46,559 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 21:55:49,557 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 21:55:49,733 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 21:55:49,765 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 21:55:50,270 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 21:55:53,710 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.193 seconds (JVM running for 10.109)
+2018-09-07 21:55:53,714 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:00:31,164 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 976 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:00:31,165 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:00:31,167 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:00:34,092 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:00:34,260 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:00:34,292 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:00:34,801 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:00:38,206 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 7.869 seconds (JVM running for 9.304)
+2018-09-07 22:00:38,209 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:02:29,394 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:02:29,502 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 976 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:02:29,503 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:02:29,503 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:02:33,183 INFO (SpringBootMongoApplication.java:17)- ------启动ing-----
+2018-09-07 22:02:33,247 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 976 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:02:33,248 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:02:33,248 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:02:34,406 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:02:34,516 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:02:34,551 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:02:34,702 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:02:36,056 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 2.868 seconds (JVM running for 127.153)
+2018-09-07 22:02:36,062 INFO (SpringBootMongoApplication.java:19)- ------启动成功-----
+2018-09-07 22:03:34,164 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2272 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:03:34,164 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:03:34,223 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:03:37,237 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:03:37,407 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:03:37,441 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:03:37,936 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:03:41,373 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.1 seconds (JVM running for 9.551)
+2018-09-07 22:03:41,376 INFO (SpringBootMongoApplication.java:19)- ------启动成功-----
+2018-09-07 22:13:48,887 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2420 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:13:48,888 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:13:48,890 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:13:52,316 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:13:52,490 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:13:52,521 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:13:53,051 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:13:56,641 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.705 seconds (JVM running for 10.025)
+2018-09-07 22:13:56,645 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:19:29,174 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:19:29,241 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2420 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:19:29,242 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:19:29,242 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:19:30,797 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:19:30,922 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:19:30,959 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:19:35,173 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:19:35,236 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 2420 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:19:35,237 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:19:35,237 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:19:36,333 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:19:36,428 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:19:36,465 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:19:36,616 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:19:36,942 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:19:38,083 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 2.906 seconds (JVM running for 351.459)
+2018-09-07 22:19:38,087 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:20:00,957 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 324 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:20:00,958 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:20:00,961 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:20:03,836 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:20:04,001 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:20:04,035 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:20:04,514 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:20:05,717 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:20:07,921 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 7.981 seconds (JVM running for 9.568)
+2018-09-07 22:20:07,924 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:25:14,577 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 7892 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:25:14,578 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:25:14,580 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:25:17,465 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:25:17,630 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:25:17,663 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:25:18,152 INFO (DynamicDataSourceRouter.java:24)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:25:19,387 INFO (DynamicDataSourceRouter.java:24)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:25:21,595 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.045 seconds (JVM running for 9.403)
+2018-09-07 22:25:21,599 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:26:00,145 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:26:00,222 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 7892 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:26:00,224 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:26:00,224 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:26:03,417 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:26:03,499 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 7892 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:26:03,500 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:26:03,500 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:26:04,583 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:26:04,699 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:26:04,736 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:26:04,870 INFO (DynamicDataSourceRouter.java:24)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:26:04,871 INFO (DynamicDataSourceRouter.java:25)- null
+2018-09-07 22:26:05,113 INFO (DynamicDataSourceRouter.java:24)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:26:05,113 INFO (DynamicDataSourceRouter.java:25)- null
+2018-09-07 22:26:06,135 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 2.711 seconds (JVM running for 53.941)
+2018-09-07 22:26:06,139 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:26:23,702 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5792 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:26:23,703 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:26:23,707 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:26:26,810 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:26:26,990 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:26:27,023 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:26:27,521 INFO (DynamicDataSourceRouter.java:24)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:26:27,521 INFO (DynamicDataSourceRouter.java:25)- null
+2018-09-07 22:26:28,801 INFO (DynamicDataSourceRouter.java:24)- DynamicDataSourceContextHolder.getDataSourceType > {}null
+2018-09-07 22:26:28,802 INFO (DynamicDataSourceRouter.java:25)- null
+2018-09-07 22:26:31,080 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.443 seconds (JVM running for 9.901)
+2018-09-07 22:26:31,084 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:32:05,770 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:32:05,838 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5792 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:32:05,839 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:32:05,839 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:32:08,582 INFO (SpringBootMongoApplication.java:12)- ------启动ing-----
+2018-09-07 22:32:08,669 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 5792 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:32:08,669 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:32:08,670 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:32:09,783 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:32:09,889 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:32:09,923 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:32:10,062 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:32:10,298 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:32:11,401 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 2.813 seconds (JVM running for 350.214)
+2018-09-07 22:32:11,420 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:32:20,106 INFO (StartupInfoLogger.java:50)- Starting SpringBootMongoApplication on MS-20171216IFOZ with PID 6872 (D:\IdeaProjects\spring-boot-mongo\target\classes started by Administrator in D:\IdeaProjects\spring-boot-mongo)
+2018-09-07 22:32:20,107 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-07 22:32:20,112 INFO (SpringApplication.java:662)- No active profile set, falling back to default profiles: default
+2018-09-07 22:32:23,108 INFO (DataSourceConfigurer.java:31)- -------- masterDataSource init ---------------------
+2018-09-07 22:32:23,279 INFO (DataSourceConfigurer.java:44)- -------------------- slave1DataSource init ---------------------
+2018-09-07 22:32:23,310 INFO (DataSourceConfigurer.java:52)- -------------------- slave2DataSource init ---------------------
+2018-09-07 22:32:23,794 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:32:25,062 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:32:27,332 INFO (StartupInfoLogger.java:59)- Started SpringBootMongoApplication in 8.223 seconds (JVM running for 9.8)
+2018-09-07 22:32:27,336 INFO (SpringBootMongoApplication.java:14)- ------启动成功-----
+2018-09-07 22:34:02,329 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:34:02,365 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:34:03,210 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:35:07,926 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:35:07,928 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:35:07,958 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:35:08,261 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:35:08,543 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:35:08,543 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:35:09,298 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:30,678 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:36:30,679 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:36:30,957 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:31,353 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:36:31,354 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:36:31,610 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:32,648 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:36:32,648 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:36:32,877 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:33,534 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:36:33,536 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:36:33,763 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:34,382 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:36:34,383 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:36:34,606 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:35,109 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:36:35,111 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:36:35,341 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:43,061 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:36:43,062 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:36:43,081 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:36:43,154 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:36:43,305 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:36:43,306 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:36:43,533 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:04,428 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:37:04,429 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:37:04,652 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:05,201 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:05,202 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:05,426 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:06,067 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:06,068 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:06,294 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:06,415 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:37:06,416 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:37:06,639 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:06,975 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:06,976 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:07,204 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:07,719 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:07,719 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:07,948 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:08,491 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:37:08,491 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:37:08,714 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:10,358 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:10,359 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:10,588 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:27,426 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:27,427 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:27,652 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:35,650 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:37:35,651 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:37:35,874 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:37:40,791 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:37:40,791 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:37:41,017 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:02,407 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:47:02,408 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:47:08,126 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:47:08,127 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:47:09,108 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:47:09,109 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:47:09,925 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:10,912 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:47:10,913 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:47:11,097 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:47:11,099 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:47:11,173 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:11,663 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:47:11,663 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:47:11,804 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:11,917 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:20,517 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:47:20,518 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:47:21,584 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:27,250 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:39,658 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:47:39,926 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:47:59,178 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:47:59,179 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:47:59,433 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:48:14,077 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:48:14,079 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:48:14,089 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:48:14,160 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:48:33,041 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:48:33,042 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:48:33,052 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:48:33,124 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:48:33,355 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:48:33,356 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:48:33,609 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:48:37,025 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:48:37,026 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:48:37,280 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:21,085 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:50:21,086 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:50:21,107 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:50:21,198 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:21,396 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:50:21,397 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:50:21,687 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:45,388 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:50:45,389 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:50:45,399 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:50:45,483 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:45,667 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:50:45,667 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:50:45,920 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:47,955 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:50:47,956 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:50:48,212 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:52,966 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:50:52,968 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:50:53,049 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:53,166 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:50:53,167 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:50:53,420 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:56,997 INFO (DynamicDataSourceAspect.java:27)- Use DataSource : {} > {}master
+2018-09-07 22:50:56,998 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}master
+2018-09-07 22:50:57,052 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:57,205 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:50:57,206 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:50:57,429 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:58,392 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:50:58,393 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:50:58,647 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:58,758 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:50:58,758 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:50:59,010 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:50:59,690 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave2
+2018-09-07 22:50:59,690 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave2
+2018-09-07 22:50:59,913 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
+2018-09-07 22:51:00,187 INFO (DynamicDataSourceAspect.java:21)- Use DataSource : {} > {}slave1
+2018-09-07 22:51:00,188 INFO (DynamicDataSourceRouter.java:23)- DynamicDataSourceContextHolder.getDataSourceType > {}slave1
+2018-09-07 22:51:00,442 INFO (DynamicDataSourceAspect.java:33)- Use DataSource : {} > {}clear
