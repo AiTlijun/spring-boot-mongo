@@ -80,4 +80,9 @@ public class UserServiceImpl implements UserService {
         log.info("form DB deleteBath:{}" + brandIds);
         userRepository.deleteBatch(brandIds);
     }
+
+    @Override
+    public void testAOP() {
+
+    }
 }

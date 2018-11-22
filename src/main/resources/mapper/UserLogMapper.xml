@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.springbootmongo.mapper.UserLogMapper">
-  <resultMap id="BaseResultMap" type="com.example.springbootmongo.entity.UserLog">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="userName" jdbcType="VARCHAR" property="username" />
-    <result column="operation" jdbcType="VARCHAR" property="operation" />
-    <result column="operationDate" jdbcType="DATE" property="operationdate" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, userName, operation, operationDate
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from user_log
-    where id = #{id,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from user_log
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.example.springbootmongo.entity.UserLog">
-    insert into user_log (userName, operation,
-      operationDate)
-    values (#{username,jdbcType=VARCHAR}, #{operation,jdbcType=VARCHAR},
-      #{operationdate,jdbcType=DATE})
-  </insert>
-  <insert id="insertSelective" parameterType="com.example.springbootmongo.entity.UserLog">
-    insert into user_log
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="username != null">
-        userName,
-      </if>
-      <if test="operation != null">
-        operation,
-      </if>
-      <if test="operationdate != null">
-        operationDate,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="username != null">
-        #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="operation != null">
-        #{operation,jdbcType=VARCHAR},
-      </if>
-      <if test="operationdate != null">
-        #{operationdate,jdbcType=DATE},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.springbootmongo.entity.UserLog">
-    update user_log
-    <set>
-      <if test="username != null">
-        userName = #{username,jdbcType=VARCHAR},
-      </if>
-      <if test="operation != null">
+    <resultMap id="BaseResultMap" type="com.example.springbootmongo.entity.UserLog">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="userName" jdbcType="VARCHAR" property="username"/>
+        <result column="operation" jdbcType="VARCHAR" property="operation"/>
+        <result column="operationDate" jdbcType="DATE" property="operationdate"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, userName, operation, operationDate
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from user_log
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from user_log
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.example.springbootmongo.entity.UserLog">
+        insert into user_log (userName, operation,
+        operationDate)
+        values (#{username,jdbcType=VARCHAR}, #{operation,jdbcType=VARCHAR},
+        #{operationdate,jdbcType=DATE})
+    </insert>
+    <insert id="insertSelective" parameterType="com.example.springbootmongo.entity.UserLog">
+        insert into user_log
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="username != null">
+                userName,
+            </if>
+            <if test="operation != null">
+                operation,
+            </if>
+            <if test="operationdate != null">
+                operationDate,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="operation != null">
+                #{operation,jdbcType=VARCHAR},
+            </if>
+            <if test="operationdate != null">
+                #{operationdate,jdbcType=DATE},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.springbootmongo.entity.UserLog">
+        update user_log
+        <set>
+            <if test="username != null">
+                userName = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="operation != null">
+                operation = #{operation,jdbcType=VARCHAR},
+            </if>
+            <if test="operationdate != null">
+                operationDate = #{operationdate,jdbcType=DATE},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.springbootmongo.entity.UserLog">
+        update user_log
+        set userName = #{username,jdbcType=VARCHAR},
         operation = #{operation,jdbcType=VARCHAR},
-      </if>
-      <if test="operationdate != null">
-        operationDate = #{operationdate,jdbcType=DATE},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.springbootmongo.entity.UserLog">
-    update user_log
-    set userName = #{username,jdbcType=VARCHAR},
-      operation = #{operation,jdbcType=VARCHAR},
-      operationDate = #{operationdate,jdbcType=DATE}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+        operationDate = #{operationdate,jdbcType=DATE}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
 </mapper>

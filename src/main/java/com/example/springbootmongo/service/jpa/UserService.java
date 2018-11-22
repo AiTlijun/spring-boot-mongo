@@ -20,4 +20,6 @@ public interface UserService {
     Page<User> getUserPage(Integer pageOffset, Integer pageSize);
 
     void deleteBath(List<Integer> brandIds);
+
+     void testAOP();
 }

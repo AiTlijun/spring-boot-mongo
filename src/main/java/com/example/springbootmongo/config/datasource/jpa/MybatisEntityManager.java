@@ -16,7 +16,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 
 /**
- *
  * 用户操作日志数据源配置类
  *
  * @author lijun
